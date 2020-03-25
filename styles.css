@@ -176,7 +176,7 @@ h1.name {
 }
 
 .lead {
-	font-size: 44px;
+	font-size: 30px;
 	font-weight: 300;
 	margin-top: 60px;
 	line-height: 55px;
@@ -501,7 +501,7 @@ li .description {
 
 	.lead {
 		margin-top: 15px;
-		font-size: 20px;
+		font-size: 15px;
 		line-height: 28px;
 	}
 	.container {
