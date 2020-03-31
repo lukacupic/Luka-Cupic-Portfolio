@@ -1,0 +1,264 @@
+/*Load google font*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+#title {
+  font-size: 1.5rem;
+}
+
+.icon {
+  font-size: .9rem;
+  display: inline-flex;
+  background: #D8D8D8;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+.icon span {
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+.card a {
+  padding-right: 15px;
+}
+
+.github {
+  color: #739150;
+}
+
+.status {
+  color: #7699C2;
+}
+
+/*Hero section*/
+
+.hero-container {
+	padding-left: 400px;
+	height: auto;
+	margin: 60px auto;
+}
+
+.hero {
+	margin: 50px auto; 
+	position: relative;
+}
+
+h1.name {
+	font-size: 60px;
+	font-weight: 300;
+	display: inline-block;
+}
+
+.job-title {
+	vertical-align: top;
+	background-color: #D9E7F8;
+	color: #4A90E2;
+	font-weight: 600;
+	margin-top: 5px;
+	margin-left: 20px;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 15px 25px;
+}
+
+.email {
+	display: block;
+	font-size: 24px;
+	font-weight: 300;
+	color: #81899C;
+	margin-top: 10px;
+}
+
+.hero-icon span {
+    opacity: 60%;
+    border-width: 1px;
+    margin-top: 35px;
+    margin-right: 10px;
+}
+
+.hero-icon :hover {
+	opacity: 100%;
+}
+
+.hero-lead {
+	font-size: 30px;
+	font-weight: 300;
+	margin-top: 60px;
+	line-height: 55px;
+}
+
+/*hero ends*/
+
+/*skills & intrests*/
+
+body {
+	line-height: 1;
+	font-family: lato, ubuntu,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+	text-rendering : optimizeLegibility;
+	-webkit-font-smoothing : antialiased;
+	font-size: 19px;
+}
+
+span, h3, h1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.sections {
+	vertical-align: top;
+	display: inline-block;
+	height: auto;
+}
+
+.section-title {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.list-card {
+	margin: 30px 0;
+}
+
+.list-card .skill-exp, .list-card div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.list-card .skill-exp {
+	margin-right: 15px;
+	color: #4A90E2;
+	font-weight: 600;
+	width: 100px;
+}
+
+.list-card div {
+	width: 70%;
+}
+
+.list-card h3 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #5B6A9A;
+	line-height: 26px;
+	margin-bottom: 8px;
+}
+
+.list-card div span {
+	font-size: 16px;
+	color: #81899C;
+	line-height: 22px;
+}
+
+/*skill and intrests ends*/
+
+/*technologies*/
+
+.java {
+  background: #BAD5F5;
+}
+.java span::after {
+  content: "Java";
+}
+
+.javafx {
+  background: #BAD5F5;
+}
+.javafx span::after {
+  content: "JavaFX";
+}
+
+.swing {
+  background: #BAD5F5;
+}
+.swing span::after {
+  content: "Swing";
+}
+
+.spring {
+  background: #AFEAE5;
+}
+.spring span::after {
+  content: "Spring Boot";
+}
+
+.jsp {
+  background: #AFEAE5;
+}
+.jsp span::after {
+  content: "JSP";
+}
+
+.angular {
+  background: #F2C986;
+}
+.angular span::after {
+  content: "Angular";
+}
+
+.node {
+  background: #E1C1C1;
+}
+.node span::after {
+  content: "Node.js";
+}
+
+.python {
+  background: #EADD86;
+}
+.python span::after {
+  content: "Python";
+}
+
+.js {
+  background: #AFEAE5;
+}
+.js span::after {
+  content: "JavaScript";
+}
+
+.html {
+  background: #AFEAE5;
+}
+.html span::after {
+  content: "HTML";
+}
+
+.css {
+  background: #AFEAE5;
+}
+.css span::after {
+  content: "CSS";
+}
+
+.c {
+  background: #AFEAE5;
+}
+.c span::after {
+  content: "C";
+}
+
+.cpp {
+  background: #AFEAE5;
+}
+.cpp span::after {
+  content: "C++";
+}
+
+.qt {
+  background: #AFEAE5;
+}
+.qt span::after {
+  content: "Qt";
+}
+
+.unity {
+  background: #AFEAE5;
+}
+.unity span::after {
+  content: "Unity 3D";
+}
