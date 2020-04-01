@@ -85,7 +85,6 @@ const data = [
     "project": "JURI (2015.)",
     "stack": ["c", "cpp", "qt"],
     "description": "AI-based chat program for performing certain tasks. Supports text-to-speech synthesis.",
-    "github": "https://github.com/lukacupic/PiX",
     "image": "backgrounds/JURI2.png",
     "status": "Finished"
   },
