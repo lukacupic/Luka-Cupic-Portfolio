@@ -11,7 +11,7 @@ const data = [
     "project": "Implementation of an Information Retrieval System (2019.)",
     "stack": ["python", "html"],
     "description": "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
-    "website": "https://drive.google.com/drive/u/0/folders/1WJJV9PAKUkpbkPUh3tAG8VLd8GHYUKVb",
+    "website": "https://drive.google.com/open?id=1gaJ8rdxymApy9QYIzMRC2yJU_5r5tw8c",
     "github": "https://github.com/lukacupic/IR-Project",
     "image": "/backgrounds/IR.png",
     "status": "Finished"
