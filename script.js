@@ -27,7 +27,7 @@ const data = [
   },
   {
     "project": "Super Marko AI (2018.)",
-    "stack": ["java"],
+    "stack": ["java", "javafx"],
     "description": "A 2D platform game inspired by the classic Super Mario. The goal is to complete each level while avoiding obstacles. The player can see how good they are compared to the AI player, train their own AI, import custom levels, etc.",
     "website": "https://ferko.fer.hr/data-repo/proj/5/",
     "image": "/backgrounds/Marko.png",

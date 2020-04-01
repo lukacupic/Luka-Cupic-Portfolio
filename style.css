@@ -222,7 +222,7 @@ ol {
 	display: block;
 	margin-top: 120px;
 	height: 2px;
-	background: #EEF0F7;
+	background: rgb(129, 137, 156, 0.35)
 
 }
 ol::before,
@@ -301,6 +301,14 @@ li .description .exp {
 }
 
 .timeline .date {
+	font-size: 14px;
+	color: #81899C;
+	font-weight: 300;
+}
+
+.timeline .location{
+	display: inline-block;
+	margin-top: 10px;
 	font-size: 14px;
 	color: #81899C;
 	font-weight: 300;
