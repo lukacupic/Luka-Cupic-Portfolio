@@ -129,9 +129,10 @@ class Card extends React.Component {
               React.createElement("i", { className: "material-icons right" }, "more_vert"))),
 
           React.createElement("div", { className: "card-reveal" },
-            React.createElement("span", { className: "card-title grey-text text-darken-4" }, this.props.data.project, React.createElement("i", { className: "material-icons right" }, "close")),
-            React.createElement("div", null, React.createElement("span", { className: "status" }, this.props.data.status)),
-            React.createElement("p", null, this.props.data.description)))));
+            React.createElement("i", { className: "material-icons right", style: {marginTop: "4px", pointerEvents: "none"}}, "close"),
+            React.createElement("span", { className: "card-title grey-text text-darken-4" }, this.props.data.project),
+            React.createElement("p", null, this.props.data.description),
+            React.createElement("div", null, React.createElement("span", { className: "status" }, this.props.data.status))))));
   }
 }
 

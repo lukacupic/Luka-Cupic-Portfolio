@@ -213,6 +213,15 @@ strong {
 	line-height: 22px;
 }
 
+.card-title {
+	line-height: 140%;
+	margin-bottom: 20px;
+}
+
+.card-reveal div, p {
+	margin-bottom: 20px;
+}
+
 /*skill and intrests ends*/
 
 /* Timeline styles*/
