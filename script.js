@@ -1,4 +1,3 @@
-// Dummy data placeholder. Replace with array of actual data objects to come from Airtable 
 const data = [
   {
     "project": "Classification of Music Based on Machine Learning (2020.)",
@@ -10,7 +9,7 @@ const data = [
   {
     "project": "Implementation of an Information Retrieval System (2019.)",
     "stack": ["python", "html"],
-    "description": "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+    "description": "Custom IR system aimed at comparing vector space models of increasing complexity. This is done by analyzing the evaluation metrics of each model on our custom dataset of scientific books and articles.",
     "website": "https://drive.google.com/open?id=1gaJ8rdxymApy9QYIzMRC2yJU_5r5tw8c",
     "github": "https://github.com/lukacupic/IR-Project",
     "image": "/backgrounds/IR.png",
@@ -34,14 +33,6 @@ const data = [
     "status": "Finished"
   },
   {
-    "project": "Abstract-Subroutine (2018.)",
-    "stack": ["java", "spring", "angular"],
-    "description": "Electronic diary service used by students, parents, and professors",
-    "github": "https://github.com/lukacupic/Abstract-Subroutine",
-    "image": "/backgrounds/Coming_Soon.png",
-    "status": "Finished"
-  },
-  {
     "project": "Star Wars Word Generator (2018.)",
     "stack": ["java", "jsp"],
     "description": "Web generator for create randomized words from the Star Wars universe",
@@ -58,20 +49,28 @@ const data = [
     "status": "Finished"
   },
   {
-    "project": "Buffons's Needle Simulator (2018.)",
-    "stack": ["java", "swing"],
-    "description": "Simulator of the Buffon's needle problem which uses the Monte Carlo method for approximating the number π",
-    "github": "https://github.com/lukacupic/Buffons-Needle-Simulator",
-    "image": "/backgrounds/Buffon.png",
-    "status": "Finished"
-  },
-  {
     "project": "PiX (2018.)",
     "stack": ["java", "swing"],
     "description": "Simple image editor with several image processing tools",
     "github": "https://github.com/lukacupic/PiX",
     "image": "/backgrounds/PiX.png",
     "status": "In Development"
+  },
+  {
+    "project": "Abstract-Subroutine (2017.)",
+    "stack": ["java", "spring", "angular"],
+    "description": "Electronic diary service used by students, parents, and professors",
+    "github": "https://github.com/lukacupic/Abstract-Subroutine",
+    "image": "/backgrounds/Coming_Soon.png",
+    "status": "Finished"
+  },
+  {
+    "project": "Buffons's Needle Simulator (2017.)",
+    "stack": ["java", "swing"],
+    "description": "Simulator of the Buffon's needle problem which uses the Monte Carlo method for approximating the number π",
+    "github": "https://github.com/lukacupic/Buffons-Needle-Simulator",
+    "image": "/backgrounds/Buffon.png",
+    "status": "Finished"
   },
   {
     "project": "RProject (2017.)",
