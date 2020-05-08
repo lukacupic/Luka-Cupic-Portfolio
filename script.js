@@ -1,5 +1,13 @@
 const data = [
   {
+    "project": "Dormire (2020.)",
+    "stack": [""],
+    "description": "Minimalist Wristband for Health and Sleep",
+    "website": "https://dormire.life",
+    "image": "/backgrounds/Dormire.png",
+    "status": "In Development"
+  },
+  {
     "project": "Classification of Music Based on Machine Learning (2020.)",
     "stack": ["python", "java"],
     "description": "Master's thesis exploring the possibilities of music classification and implementing some of them in a final application",
@@ -77,7 +85,7 @@ const data = [
     "stack": ["java", "swing"],
     "description": "Simple simulator of the Risk board game",
     "github": "https://github.com/lukacupic/RProject",
-    "image": "/backgrounds/Coming_Soon.png",
+    "image": "/backgrounds/Risk.png",
     "status": "In Development"
   },
   {
@@ -120,7 +128,7 @@ class Card extends React.Component {
             React.createElement("div", null,
 
               this.props.data.website == null ? React.createElement("p", null) :
-                React.createElement("span", null, React.createElement("a", { href: this.props.data.website }, "Website")),
+                React.createElement("span", null, React.createElement("a", { href: this.props.data.website, target: "_blank" }, "Website")),
 
               this.props.data.github == null ? React.createElement("a", null) :
                 React.createElement("span", null, React.createElement("a", { className: "github", href: this.props.data.github }, "Github")),
