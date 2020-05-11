@@ -48,14 +48,14 @@ const data = [
     "image": "/backgrounds/SW.png",
     "status": "Offline"
   },
-  {
-    "project": "Document Management and Search System (2018.)",
-    "stack": ["java", "javafx"],
-    "description": "Desktop-based application and search engine for managing and visualizing PDF documents",
-    "github": "https://github.com/lukacupic/PDF-Document-Management-and-Search-System",
-    "image": "/backgrounds/Coming_Soon.png",
-    "status": "Finished"
-  },
+//  {
+//    "project": "Document Management and Search System (2018.)",
+//    "stack": ["java", "javafx"],
+//    "description": "Desktop-based application and search engine for managing and visualizing PDF documents",
+//    "github": "https://github.com/lukacupic/PDF-Document-Management-and-Search-System",
+//    "image": "/backgrounds/Coming_Soon.png",
+//    "status": "Finished"
+//  },
   {
     "project": "PiX (2018.)",
     "stack": ["java", "swing"],
@@ -117,7 +117,7 @@ class Card extends React.Component {
       React.createElement("div", { className: "col m4", style: { width: "350px", marginRight: "50px", marginBottom: "50px", padding: "0" } },
         React.createElement("div", { className: "card hoverable", style: { margin: "0" } },
           React.createElement("div", { className: "card-image waves-effect waves-block waves-light" },
-            React.createElement("img", { style: style.img, className: "activator", src: this.props.data.image })),
+            React.createElement("img", { style: style.img, className: "activator zoom", src: this.props.data.image })),
 
           React.createElement("div", { className: "card-content" },
             React.createElement("div", null,
