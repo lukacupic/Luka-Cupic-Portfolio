@@ -9,7 +9,7 @@ const data = [
   },
   {
     "project": "Classification of Music Based on Machine Learning (2020.)",
-    "stack": ["python", "java"],
+    "stack": ["python", "tensorflow", "java"],
     "description": "Master's thesis exploring the possibilities of music classification and implementing some of them in a final application",
     "image": "/backgrounds/Music.png",
     "status": "In Development"

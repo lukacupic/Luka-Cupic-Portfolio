@@ -381,7 +381,7 @@ li .description {
 
 
 @media(max-width: 425px) {
-	.timeline{
+	li .point{
 		display: none;
 	}
 	.hero-container {
@@ -408,7 +408,7 @@ li .description {
 }
 
 .swing {
-  background: #BAD5F5;
+  background: #AFEAE5;
 }
 .swing span::after {
   content: "Swing";
@@ -449,15 +449,22 @@ li .description {
   content: "Python";
 }
 
+.tensorflow {
+	background: #AFEAE5;
+}
+.tensorflow span::after {
+	content: "TensorFlow";
+}
+
 .js {
-  background: #AFEAE5;
+  background:#E1C1C1;
 }
 .js span::after {
   content: "JavaScript";
 }
 
 .html {
-  background: #AFEAE5;
+  background: #F2C986
 }
 .html span::after {
   content: "HTML";
@@ -478,14 +485,14 @@ li .description {
 }
 
 .cpp {
-  background: #AFEAE5;
+  background: #81899C;
 }
 .cpp span::after {
   content: "C++";
 }
 
 .qt {
-  background: #AFEAE5;
+  background: #BAD5F5;
 }
 .qt span::after {
   content: "Qt";
