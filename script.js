@@ -11,7 +11,7 @@ const data = [
     "project": "Classification of Music Based on Machine Learning (2020.)",
     "stack": ["python", "tensorflow", "java"],
     "description": "Master's thesis exploring the techniques for classification of musical instruments. The final model is deployed into an Android application.",
-    "website": "https://drive.google.com/file/d/1ssXnFdcMPAqOfVj26MNRXUi-MfJscJoA/view?usp=sharing",
+    "website": "documents/Thesis.pdf",
     "image": "/backgrounds/Music.png",
     "status": "Finished"
   },
@@ -19,7 +19,7 @@ const data = [
     "project": "Implementation of an Information Retrieval System (2019.)",
     "stack": ["python", "html"],
     "description": "Custom IR system aimed at comparing vector space models of increasing complexity. This is done by analyzing the evaluation metrics of each model on our custom dataset of scientific books and articles.",
-    "website": "https://drive.google.com/open?id=1gaJ8rdxymApy9QYIzMRC2yJU_5r5tw8c",
+    "website": "documents/IR.pdf",
     "github": "https://github.com/lukacupic/IR-Project",
     "image": "/backgrounds/IR.png",
     "status": "Finished"
