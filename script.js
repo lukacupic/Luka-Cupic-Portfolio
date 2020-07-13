@@ -10,9 +10,10 @@ const data = [
   {
     "project": "Classification of Music Based on Machine Learning (2020.)",
     "stack": ["python", "tensorflow", "java"],
-    "description": "Master's thesis exploring the possibilities of music classification and implementing some of them in a final application",
+    "description": "Master's thesis exploring the techniques for classification of musical instruments. The final model is deployed into an Android application.",
+    "website": "https://drive.google.com/file/d/1ssXnFdcMPAqOfVj26MNRXUi-MfJscJoA/view?usp=sharing",
     "image": "/backgrounds/Music.png",
-    "status": "In Development"
+    "status": "Finished"
   },
   {
     "project": "Implementation of an Information Retrieval System (2019.)",
@@ -65,14 +66,6 @@ const data = [
     "status": "In Development"
   },
   {
-    "project": "Abstract-Subroutine (2017.)",
-    "stack": ["java", "spring", "angular"],
-    "description": "Electronic diary service used by students, parents, and professors",
-    "github": "https://github.com/lukacupic/Abstract-Subroutine",
-    "image": "/backgrounds/Coming_Soon.png",
-    "status": "Finished"
-  },
-  {
     "project": "Buffons's Needle Simulator (2017.)",
     "stack": ["java", "swing"],
     "description": "Simulator of the Buffon's needle problem which uses the Monte Carlo method for approximating the number π",
@@ -88,21 +81,6 @@ const data = [
     "image": "/backgrounds/Risk.png",
     "status": "In Development"
   },
-  {
-    "project": "JURI (2015.)",
-    "stack": ["c", "cpp", "qt"],
-    "description": "AI-based chat program for performing certain tasks. Supports text-to-speech synthesis.",
-    "image": "backgrounds/JURI2.png",
-    "status": "Finished"
-  },
-  {
-    "project": "The New Unity Project (2012.)",
-    "stack": ["unity", "js"],
-    "description": "Simple 3D open-world demo game",
-    "website": "https://www.youtube.com/watch?v=pwjKMxKjCtI",
-    "image": "/backgrounds/Unity.png",
-    "status": "Finished"
-  }
 ];
 
 function Layout(props) {
