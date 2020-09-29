@@ -1,10 +1,11 @@
 const data = [
   {
-    "project": "Dormire (2020.)",
-    "stack": [""],
-    "description": "Minimalist Wristband for Health and Sleep",
-    "website": "https://dormire.life",
-    "image": "/backgrounds/Dormire.png",
+    "project": "Droidio — A Star Wars Word Generator (2020.)",
+    "stack": ["js", "html", "css"],
+    "description": "A simple web tool for generating random words from the Star Wars universe",
+    "website": "https://droidio.netlify.app/",
+    "github": "https://github.com/lukacupic/Droidio",
+    "image": "/backgrounds/Droidio.png",
     "status": "In Development"
   },
   {
@@ -14,6 +15,14 @@ const data = [
     "website": "documents/Thesis.pdf",
     "image": "/backgrounds/Music.png",
     "status": "Finished"
+  },
+  {
+    "project": "Dormire (2020.)",
+    "stack": [""],
+    "description": "Minimalist Wristband for Health and Sleep",
+    "website": "https://dormire.life",
+    "image": "/backgrounds/Dormire.png",
+    "status": "In Development"
   },
   {
     "project": "Implementation of an Information Retrieval System (2019.)",
@@ -41,22 +50,14 @@ const data = [
     "image": "/backgrounds/Marko.png",
     "status": "Finished"
   },
-  {
-    "project": "Star Wars Word Generator (2018.)",
-    "stack": ["java", "jsp"],
-    "description": "Web generator for create randomized words from the Star Wars universe",
-    "github": "https://github.com/lukacupic/Star-Wars-Word-Generator",
-    "image": "/backgrounds/SW.png",
-    "status": "Offline"
-  },
-//  {
-//    "project": "Document Management and Search System (2018.)",
-//    "stack": ["java", "javafx"],
-//    "description": "Desktop-based application and search engine for managing and visualizing PDF documents",
-//    "github": "https://github.com/lukacupic/PDF-Document-Management-and-Search-System",
-//    "image": "/backgrounds/Coming_Soon.png",
-//    "status": "Finished"
-//  },
+  //  {
+  //    "project": "Document Management and Search System (2018.)",
+  //    "stack": ["java", "javafx"],
+  //    "description": "Desktop-based application and search engine for managing and visualizing PDF documents",
+  //    "github": "https://github.com/lukacupic/PDF-Document-Management-and-Search-System",
+  //    "image": "/backgrounds/Coming_Soon.png",
+  //    "status": "Finished"
+  //  },
   {
     "project": "PiX (2018.)",
     "stack": ["java", "swing"],
@@ -109,12 +110,12 @@ class Card extends React.Component {
                 React.createElement("span", null, React.createElement("a", { href: this.props.data.website, target: "_blank" }, "Website")),
 
               this.props.data.github == null ? React.createElement("a", null) :
-                React.createElement("span", null, React.createElement("a", { className: "github", href: this.props.data.github }, "Github")),
+                React.createElement("span", null, React.createElement("a", { className: "github", href: this.props.data.github, target: "_blank" }, "Github")),
 
               React.createElement("i", { className: "material-icons right" }, "more_vert"))),
 
           React.createElement("div", { className: "card-reveal" },
-            React.createElement("i", { className: "material-icons right", style: {marginTop: "4px", pointerEvents: "none"}}, "close"),
+            React.createElement("i", { className: "material-icons right", style: { marginTop: "4px", pointerEvents: "none" } }, "close"),
             React.createElement("span", { className: "card-title grey-text text-darken-4" }, this.props.data.project),
             React.createElement("p", null, this.props.data.description),
             React.createElement("div", null, React.createElement("span", { className: "status" }, this.props.data.status))))));
