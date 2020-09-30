@@ -1,8 +1,8 @@
 const data = [
   {
-    "project": "Droidio — A Star Wars Word Generator (2020.)",
+    "project": "Droidio — A Star Wars Generator (2020.)",
     "stack": ["js", "html", "css"],
-    "description": "A simple web tool for generating random words from the Star Wars universe",
+    "description": "A simple web tool for generating the names of random things from the Star Wars universe",
     "website": "https://droidio.netlify.app/",
     "github": "https://github.com/lukacupic/Droidio",
     "image": "/backgrounds/Droidio.png",
