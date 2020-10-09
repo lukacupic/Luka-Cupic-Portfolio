@@ -6,7 +6,7 @@ const data = [
     "website": "https://droidio.netlify.app/",
     "github": "https://github.com/lukacupic/Droidio",
     "image": "/backgrounds/Droidio.png",
-    "status": "In Development"
+    "status": "Finished"
   },
   {
     "project": "Classification of Music Based on Machine Learning (2020.)",
