@@ -128,8 +128,9 @@ h1.name {
 }
 
 .hero-lead {
-	font-size: 25px;
-	font-weight: 300;
+	font-family: 'Courier New', Courier, monospace;
+	color: black;
+	font-size: 20px;
 	margin-top: 60px;
 	line-height: 45px;
 }
