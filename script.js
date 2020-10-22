@@ -1,5 +1,13 @@
 const data = [
   {
+    "project": "Trading API (2020.)",
+    "stack": ["java", "javafx"],
+    "description": "A software bot which uses brokerage API to perform semi-automated stock trading",
+    "github": "https://github.com/lukacupic/TradingAPI",
+    "image": "/backgrounds/Trading.png",
+    "status": "In Development"
+  },
+  {
     "project": "Droidio — A Star Wars Generator (2020.)",
     "stack": ["js", "html", "css"],
     "description": "A simple web tool for generating the names of random things from the Star Wars universe",
@@ -15,14 +23,6 @@ const data = [
     "website": "documents/Thesis.pdf",
     "image": "/backgrounds/Music.png",
     "status": "Finished"
-  },
-  {
-    "project": "Dormire (2020.)",
-    "stack": [""],
-    "description": "Minimalist Wristband for Health and Sleep",
-    "website": "https://dormire.life",
-    "image": "/backgrounds/Dormire.png",
-    "status": "In Development"
   },
   {
     "project": "Implementation of an Information Retrieval System (2019.)",
