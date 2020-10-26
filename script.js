@@ -4,7 +4,7 @@ const data = [
     "stack": ["java", "javafx"],
     "description": "A software bot which uses brokerage API to perform semi-automated stock trading",
     "github": "https://github.com/lukacupic/TradingAPI",
-    "image": "/backgrounds/Trading.png",
+    "image": "/backgrounds/Trading.jpg",
     "status": "In Development"
   },
   {
@@ -13,7 +13,7 @@ const data = [
     "description": "A simple web tool for generating the names of random things from the Star Wars universe",
     "website": "https://droidio.netlify.app/",
     "github": "https://github.com/lukacupic/Droidio",
-    "image": "/backgrounds/Droidio.png",
+    "image": "/backgrounds/Droidio.jpg",
     "status": "Finished"
   },
   {
@@ -21,7 +21,7 @@ const data = [
     "stack": ["python", "tensorflow", "java"],
     "description": "Master's thesis exploring the techniques for classification of musical instruments. The final model is deployed into an Android application.",
     "website": "documents/Thesis.pdf",
-    "image": "/backgrounds/Music.png",
+    "image": "/backgrounds/Music.jpg",
     "status": "Finished"
   },
   {
@@ -30,7 +30,7 @@ const data = [
     "description": "Custom IR system aimed at comparing vector space models of increasing complexity. This is done by analyzing the evaluation metrics of each model on our custom dataset of scientific books and articles.",
     "website": "documents/IR.pdf",
     "github": "https://github.com/lukacupic/IR-Project",
-    "image": "/backgrounds/IR.png",
+    "image": "/backgrounds/IR.jpg",
     "status": "Finished"
   },
   {
@@ -39,7 +39,7 @@ const data = [
     "description": "Web simulator of a data transmission system which uses the Hamming code for error detection and correction",
     "website": "https://ferko.fer.hr/diglog-demo/hammingov-kod/hamming/index.html",
     "github": "https://github.com/lukacupic/Hamming-Simulator",
-    "image": "/backgrounds/Hamming.png",
+    "image": "/backgrounds/Hamming.jpg",
     "status": "Finished"
   },
   {
@@ -47,7 +47,7 @@ const data = [
     "stack": ["java", "javafx"],
     "description": "A 2D platform game inspired by the classic Super Mario. The goal is to complete each level while avoiding obstacles. The player can see how good they are compared to the AI player, train their own AI, import custom levels, etc.",
     "website": "https://ferko.fer.hr/data-repo/proj/5/",
-    "image": "/backgrounds/Marko.png",
+    "image": "/backgrounds/Marko.jpg",
     "status": "Finished"
   },
   //  {
@@ -55,7 +55,7 @@ const data = [
   //    "stack": ["java", "javafx"],
   //    "description": "Desktop-based application and search engine for managing and visualizing PDF documents",
   //    "github": "https://github.com/lukacupic/PDF-Document-Management-and-Search-System",
-  //    "image": "/backgrounds/Coming_Soon.png",
+  //    "image": "/backgrounds/Coming_Soon.jpg",
   //    "status": "Finished"
   //  },
   {
@@ -63,7 +63,7 @@ const data = [
     "stack": ["java", "swing"],
     "description": "Simple image editor with several image processing tools",
     "github": "https://github.com/lukacupic/PiX",
-    "image": "/backgrounds/PiX.png",
+    "image": "/backgrounds/PiX.jpg",
     "status": "In Development"
   },
   {
@@ -71,7 +71,7 @@ const data = [
     "stack": ["java", "swing"],
     "description": "Simulator of the Buffon's needle problem which uses the Monte Carlo method for approximating the number π",
     "github": "https://github.com/lukacupic/Buffons-Needle-Simulator",
-    "image": "/backgrounds/Buffon.png",
+    "image": "/backgrounds/Buffon.jpg",
     "status": "Finished"
   },
   {
@@ -79,7 +79,7 @@ const data = [
     "stack": ["java", "swing"],
     "description": "Simple simulator of the Risk board game",
     "github": "https://github.com/lukacupic/RProject",
-    "image": "/backgrounds/Risk.png",
+    "image": "/backgrounds/Risk.jpg",
     "status": "In Development"
   },
 ];
