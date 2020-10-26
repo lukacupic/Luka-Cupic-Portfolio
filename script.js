@@ -21,6 +21,7 @@ const data = [
     "stack": ["python", "tensorflow", "java"],
     "description": "Master's thesis exploring the techniques for classification of musical instruments. The final model is deployed into an Android application.",
     "website": "documents/Thesis.pdf",
+    "clickname": "Paper",
     "image": "/backgrounds/Music.jpg",
     "status": "Finished"
   },
@@ -29,6 +30,7 @@ const data = [
     "stack": ["python", "html"],
     "description": "Custom IR system aimed at comparing vector space models of increasing complexity. This is done by analyzing the evaluation metrics of each model on our custom dataset of scientific books and articles.",
     "website": "documents/IR.pdf",
+    "clickname": "Paper",
     "github": "https://github.com/lukacupic/IR-Project",
     "image": "/backgrounds/IR.jpg",
     "status": "Finished"
@@ -107,7 +109,8 @@ class Card extends React.Component {
             React.createElement("div", null,
 
               this.props.data.website == null ? React.createElement("p", null) :
-                React.createElement("span", null, React.createElement("a", { href: this.props.data.website, target: "_blank" }, "Website")),
+                React.createElement("span", null, React.createElement("a", { href: this.props.data.website, target: "_blank" },
+                  this.props.data.clickname == null ? "Website" : this.props.data.clickname)),
 
               this.props.data.github == null ? React.createElement("a", null) :
                 React.createElement("span", null, React.createElement("a", { className: "github", href: this.props.data.github, target: "_blank" }, "Github")),
