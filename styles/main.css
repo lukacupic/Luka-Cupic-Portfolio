@@ -1,43 +1,15 @@
 /*Load google font*/
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
-#title {
-  font-size: 1.5rem;
-}
-
-.icon {
-  font-size: .9rem;
-  display: inline-flex;
-  border-radius: 3px;
-  margin-right: 5px;
-  margin-bottom: 15px;
-}
-.icon span {
-  border-radius: 5px;
-  padding: 3px 5px;
-}
-
-.card a {
-  padding-right: 15px;
-}
-
-.github {
-  color: #739150;
-}
-
-.status {
-  color: #7699C2;
-}
-
 /* icons */
 
 @font-face {
 	font-family: 'icomoon';
 	src: url('../fonts/icomoon.eot?5xtg60');
 	src: url('../fonts/icomoon.eot?5xtg60#iefix') format('embedded-opentype'),
-		 url('../fonts/icomoon.ttf?5xtg60') format('truetype'),
-		 url('../fonts/icomoon.woff?5xtg60') format('woff'),
-		url('../fonts/icomoon.svg?5xtg60#icomoon') format('svg');
+    url('../fonts/icomoon.ttf?5xtg60') format('truetype'),
+    url('../fonts/icomoon.woff?5xtg60') format('woff'),
+    url('../fonts/icomoon.svg?5xtg60#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -51,24 +23,40 @@
     text-rendering: optimizeLegibility;
 }
 
-.icon-upwork:before {
+.icons {
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+.icons span {
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+.icon-cv:before {
 	content: "\e900";
 }
+
+.icon-upwork:before {
+	content: "\e903";
+}
+
 .icon-github:before {
-	content: "\eab0";
+	content: "\e901";
 }
+
 .icon-linkedin:before {
-	content: "\eac9";
+	content: "\e902";
 }
+
 .icon-style {
 	display: inline-block;
-	font-size: 35px;
-	margin-top: 15px;
-	margin-right: 10px;
-	width: 30px;
-	height: 30px;
+	font-size: 50px;
+	width: 1em;
 	color: #81899C;
+	text-align: center;
 }
+
 .icon-style:hover {
 	color:#4A90E2;
 }
@@ -78,32 +66,27 @@
 /*Hero section*/
 
 .hero-container {
-	padding-left: 400px;
 	height: auto;
-	margin: 60px auto;
 }
 
 .hero {
-	margin: 50px auto; 
-	position: relative;
+	margin-top: 13%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-h1.name {
-	font-size: 50px;
-	font-weight: 300;
-	display: inline-block;
+.name {
+	font-size: 65px;
+	font-weight: 500;
+	letter-spacing: 15px;
 }
 
-.job-title {
-	vertical-align: top;
-	background-color: #D9E7F8;
-	color: #4A90E2;
-	font-weight: 600;
-	margin-top: 5px;
-	margin-left: 20px;
-	border-radius: 5px;
-	display: inline-block;
-	padding: 15px 25px;
+.hero-lead {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 3px;
 }
 
 .email {
@@ -111,234 +94,12 @@ h1.name {
 	font-size: 20px;
 	font-weight: 300;
 	color: #81899C;
-	margin-top: 10px;
-}
-
-.hero-icon span {
-    opacity: 60%;
-    border-width: 1px;
-    margin-top: 35px;
-    margin-right: 10px;
-}
-
-.hero-icon :hover {
-	opacity: 100%;
-}
-
-.hero-lead {
-	font-family: 'Courier New', Courier, monospace;
-	color: black;
-	font-size: 20px;
-	margin-top: 60px;
-	line-height: 45px;
-}
-
-.recommendation {
-	text-align: justify;
-	max-width: 800px;
-	font-size: 19px;
-	font-weight: 200;
-	line-height: 40px;
+	margin-top: 15px;
+	display: flex;
+  	justify-content: center;
 }
 
 /*hero ends*/
-
-/*skills & intrests*/
-
-h1, h3, body, div, p, span, ol, li {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-body {
-	line-height: 1;
-	font-family: lato, ubuntu,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
-	text-rendering : optimizeLegibility;
-	-webkit-font-smoothing : antialiased;
-	font-size: 19px;
-}
-
-p {
-	color: #15171a;
-	font-size: 17;
-	line-height: 31px;
-}
-
-strong {
-	font-weight: 600;
-}
-
-.sections {
-	vertical-align: top;
-	display: inline-block;
-	height: auto;
-}
-
-.section-title {
-	font-size: 20px;
-	font-weight: 600;
-	margin-bottom: 15px;
-}
-
-.list-card {
-	margin: 30px 0;
-}
-
-.list-card .skill-exp, .list-card div {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.list-card .skill-exp {
-	line-height: 26px;
-	margin-right: 15px;
-	color: #4A90E2;
-	font-weight: 600;
-	font-size: 17px;
-	width: 100px;
-}
-
-.list-card div {
-	width: 70%;
-}
-
-.list-card h3 {
-	font-size: 18px;
-	font-weight: 600;
-	color: #5B6A9A;
-	line-height: 26px;
-	margin-bottom: 8px;
-}
-
-.list-card div span {
-	font-size: 15px;
-	color: #81899C;
-	line-height: 22px;
-}
-
-.card-title {
-	line-height: 140%;
-	margin-bottom: 20px;
-}
-
-.card-reveal div, p {
-	margin-bottom: 20px;
-}
-
-/*skill and intrests ends*/
-
-/* Timeline styles*/
-
-ol {
-	position: relative;
-	display: block;
-	margin-top: 120px;
-	height: 2px;
-	background: rgb(129, 137, 156, 0.35)
-
-}
-ol::before,
-ol::after {
-	content: "";
-	position: absolute;
-	top: -10px;
-	display: block;
-	width: 0;
-	height: 0;
-  	border-radius: 10px;
-	border: 0px solid #31708F;
-}
-ol::before {
-	left: -5px;
-}
-ol::after {
-	right: -10px;
-	border: 0px solid transparent;
-	border-right: 0;
-	border-left: 20px solid #31708F;
-  	border-radius: 3px;
-}
-
-li {
-	position: relative;
-	display: inline-block;
-	float: left;
-	width: 25%;
-  	height: 50px;
-}
-li .line {
-  position: absolute;
-  top: -47px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #04143A;
-}
-li .point {
-	content: "";
-	top: -3px;
-	left: 0%;
-	display: block;
-	width: 8px;
-	height: 8px;
-	border: 4px solid #4A90E2;
-	border-radius: 10px;
-	background: #4A90E2;
-  	position: absolute;
-}
-li .description {
-  display: none;
-  padding: 10px 0;
-  margin-top: 20px;
-  position: relative;
-  font-weight: normal;
-  z-index: 1;
-  max-width: 95%;
-  font-size: 17px;
-  line-height: 25px;
-  color: #5B6A9A;
-}
-li .description .exp {
-	font-weight: 600;
-}
-.description::before {
-  content: '';
-  width: 0; 
-  height: 0; 
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #f4f4f4;
-  position: absolute;
-  top: -5px;
-  left: 43%;
-}
-
-.timeline .date {
-	font-size: 14px;
-	color: #81899C;
-	font-weight: 300;
-}
-
-.timeline .location{
-	display: inline-block;
-	margin-top: 10px;
-	font-size: 14px;
-	color: #81899C;
-	font-weight: 300;
-}
-
-/* ---- Hover effects ---- */
-li:hover {
-  color: #48A4D2;
-}
-li .description {
-  display: block;
-}
-
-/*timeline ends*/
 
 /* zoom */
 
@@ -389,117 +150,3 @@ li .description {
 }
 
 /*media ends*/
-
-/*technologies*/
-
-.java {
-  background: #BAD5F5;
-}
-.java span::after {
-  content: "Java";
-}
-
-.javafx {
-  background: #BAD5F5;
-}
-.javafx span::after {
-  content: "JavaFX";
-}
-
-.swing {
-  background: #AFEAE5;
-}
-.swing span::after {
-  content: "Swing";
-}
-
-.spring {
-  background: #AFEAE5;
-}
-.spring span::after {
-  content: "Spring Boot";
-}
-
-.jsp {
-  background: #AFEAE5;
-}
-.jsp span::after {
-  content: "JSP";
-}
-
-.angular {
-  background: #F2C986;
-}
-.angular span::after {
-  content: "Angular";
-}
-
-.node {
-  background: #E1C1C1;
-}
-.node span::after {
-  content: "Node.js";
-}
-
-.python {
-  background: #EADD86;
-}
-.python span::after {
-  content: "Python";
-}
-
-.tensorflow {
-	background: #AFEAE5;
-}
-.tensorflow span::after {
-	content: "TensorFlow";
-}
-
-.js {
-  background:#E1C1C1;
-}
-.js span::after {
-  content: "JavaScript";
-}
-
-.html {
-  background: #F2C986
-}
-.html span::after {
-  content: "HTML";
-}
-
-.css {
-  background: #AFEAE5;
-}
-.css span::after {
-  content: "CSS";
-}
-
-.c {
-  background: #AFEAE5;
-}
-.c span::after {
-  content: "C";
-}
-
-.cpp {
-  background: #81899C;
-}
-.cpp span::after {
-  content: "C++";
-}
-
-.qt {
-  background: #BAD5F5;
-}
-.qt span::after {
-  content: "Qt";
-}
-
-.unity {
-  background: #AFEAE5;
-}
-.unity span::after {
-  content: "Unity 3D";
-}
