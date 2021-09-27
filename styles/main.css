@@ -1,26 +1,77 @@
-/*Load google font*/
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-
-/* icons */
+@import url("/fonts/lato.ttf");
 
 @font-face {
-	font-family: 'icomoon';
-	src: url('../fonts/icomoon.eot?5xtg60');
-	src: url('../fonts/icomoon.eot?5xtg60#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?5xtg60') format('truetype'),
-    url('../fonts/icomoon.woff?5xtg60') format('woff'),
-    url('../fonts/icomoon.svg?5xtg60#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-	font-display: block;
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 15px;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  li .point {
+    display: none;
+  }
+  .container {
+    margin: 0px;
+  }
 }
 
 [class*="icon-"]:before {
-    font-family: 'icomoon';
-    font-style: normal;
-    font-weight: normal;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font: 16px Lato;
+}
+
+.container {
+  height: auto;
+  margin-top: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 15px;
+}
+
+.tagline {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+
+.email {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  color: #81899c;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .icons {
@@ -34,119 +85,52 @@
 }
 
 .icon-cv:before {
-	content: "\e900";
+  content: "\e900";
 }
 
-.icon-upwork:before {
-	content: "\e903";
+.icon-dossier:before {
+  content: "\e901";
 }
 
 .icon-github:before {
-	content: "\e901";
+  content: "\e902";
 }
 
 .icon-linkedin:before {
-	content: "\e902";
+  content: "\e903";
+}
+
+.icon-upwork:before {
+  content: "\e904";
 }
 
 .icon-style {
-	display: inline-block;
-	font-size: 50px;
-	width: 1em;
-	color: #81899C;
-	text-align: center;
+  display: inline-block;
+  font-size: 45px;
+  width: 1em;
+  color: #81899c;
+  text-align: center;
 }
 
 .icon-style:hover {
-	color:#4A90E2;
+  color: #3e70bb;
 }
 
-/* end of icons */
-
-/*Hero section*/
-
-.hero-container {
-	height: auto;
+.footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero {
-	margin-top: 13%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Chrome, Edge, Opera and Firefox */
 }
-
-.name {
-	font-size: 65px;
-	font-weight: 500;
-	letter-spacing: 15px;
-}
-
-.hero-lead {
-	font-size: 20px;
-	font-weight: 400;
-	letter-spacing: 3px;
-}
-
-.email {
-	display: block;
-	font-size: 20px;
-	font-weight: 300;
-	color: #81899C;
-	margin-top: 15px;
-	display: flex;
-  	justify-content: center;
-}
-
-/*hero ends*/
-
-/* zoom */
-
-.zoom {
-	transition: transform .2s;
-	margin: 0 auto;
-}
-
-.zoom:hover {
-	transform: scale(1.15);
-}
-
-/* zoom ends */
-
-/* Media queries*/
-
-@media(max-width: 1024px){
-	.hero-container {
-		padding: 15px;
-		margin: 0px auto;
-	}
-}
-
-@media(max-width: 768px){
-	.hero-container {
-		padding: 15px;
-	}
-
-	.timeline {
-		border: none;
-		background-color: rgba(0,0,0,0);
-
-	}
-
-	.timeline li {
-		margin-top: 70px;
-	}
-}
-
-
-@media(max-width: 425px) {
-	li .point{
-		display: none;
-	}
-	.hero-container {
-		margin: 0px;
-	}
-}
-
-/*media ends*/
