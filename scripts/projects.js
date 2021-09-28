@@ -59,14 +59,16 @@ const data = [
     image: "/backgrounds/Marko.jpg",
     status: "Finished",
   },
-  //  {
-  //    "project": "Document Management and Search System (2018.)",
-  //    "stack": ["java", "javafx"],
-  //    "description": "Desktop-based application and search engine for managing and visualizing PDF documents",
-  //    "github": "https://github.com/lukacupic/PDF-Document-Management-and-Search-System",
-  //    "image": "/backgrounds/Coming_Soon.jpg",
-  //    "status": "Finished"
-  //  },
+  // {
+  //   project: "Document Management and Search System (2018.)",
+  //   stack: ["java", "javafx"],
+  //   description:
+  //     "Desktop-based application and search engine for managing and visualizing PDF documents",
+  //   github:
+  //     "https://github.com/lukacupic/PDF-Document-Management-and-Search-System",
+  //   image: "/backgrounds/Coming_Soon.jpg",
+  //   status: "Finished",
+  // },
   {
     project: "PiX (2018.)",
     stack: ["java", "swing"],
@@ -94,18 +96,55 @@ const data = [
   },
 ];
 
+const emptyData = [
+  {
+    project: "",
+    stack: [],
+    description: "",
+    github: "",
+    image: "",
+    status: "",
+  },
+  {
+    project: "",
+    stack: [],
+    description: "",
+    github: "",
+    image: "",
+    status: "",
+  },
+];
+
 function Layout(props) {
   return React.createElement(
     "div",
     {
       className: "row",
       style: {
+        maxWidth: 1500,
         width: "auto",
-        maxWidth: "1500px",
       },
     },
     props.children
   );
+}
+
+class EmptyCard extends React.Component {
+  render() {
+    const style = {};
+
+    return React.createElement("div", {
+      className: "col m4",
+      style: {
+        // width: "350px",
+        width: "30rem",
+        marginRight: "50px",
+        marginBottom: "50px",
+        marginRight: "auto",
+        flexGrow: "0",
+      },
+    });
+  }
 }
 
 class Card extends React.Component {
@@ -117,10 +156,12 @@ class Card extends React.Component {
       {
         className: "col m4",
         style: {
-          width: "350px",
+          // width: "350px",
+          width: "30rem",
           marginRight: "50px",
           marginBottom: "50px",
-          padding: "0",
+          marginRight: "auto",
+          flexGrow: "0",
         },
       },
       React.createElement(
@@ -165,7 +206,11 @@ class Card extends React.Component {
                   null,
                   React.createElement(
                     "a",
-                    { href: this.props.data.website, target: "_blank" },
+                    {
+                      href: this.props.data.website,
+                      target: "_blank",
+                      style: { fontSize: "1.1rem" },
+                    },
                     this.props.data.clickname == null
                       ? "Website"
                       : this.props.data.clickname
@@ -183,6 +228,7 @@ class Card extends React.Component {
                       className: "github",
                       href: this.props.data.github,
                       target: "_blank",
+                      style: { fontSize: "1.1rem" },
                     },
                     "Github"
                   )
@@ -212,13 +258,23 @@ class Card extends React.Component {
             { className: "card-title grey-text text-darken-4" },
             this.props.data.project
           ),
-          React.createElement("p", null, this.props.data.description),
+          React.createElement(
+            "p",
+            {
+              style: {
+                fontSize: "1.1rem",
+                textAlign: "justify",
+                textJustify: "inter-word",
+              },
+            },
+            this.props.data.description
+          ),
           React.createElement(
             "div",
             null,
             React.createElement(
               "span",
-              { className: "status" },
+              { className: "status", style: { fontSize: "1.1rem" } },
               this.props.data.status
             )
           )
@@ -244,21 +300,29 @@ function StackIcons(props) {
   return React.createElement("div", null, " ", icons, " ");
 }
 
+// Project container
 function Projects(props) {
   const projects = [];
-  const data = props.data;
 
+  const data = props.data;
   data.forEach((item) => {
     projects.push(React.createElement(Card, { data: item }));
+  });
+
+  const emptyData = props.emptyData;
+  emptyData.forEach((item) => {
+    projects.push(React.createElement(EmptyCard, { data: item }));
   });
 
   return React.createElement(
     "div",
     {
       style: {
-        float: "left",
-        position: "relative",
-        left: "25%",
+        display: "flex",
+        minWidth: "100%",
+        flexDirection: "row",
+        flexWrap: "wrap",
+        justifyContent: "start",
       },
     },
     projects
@@ -267,7 +331,10 @@ function Projects(props) {
 
 ReactDOM.render(
   React.createElement(Layout, {
-    children: React.createElement(Projects, { data: data }),
+    children: React.createElement(Projects, {
+      data: data,
+      emptyData: emptyData,
+    }),
   }),
   document.getElementById("root")
 );

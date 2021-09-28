@@ -45,7 +45,8 @@
 }
 
 body {
-  font: 16px Lato, sans-serif;
+  font: 10px Lato, sans-serif;
+  overflow-y: scroll;
 }
 
 .container {
@@ -58,36 +59,42 @@ body {
 }
 
 .name {
-  font-size: 65px;
+  font-size: 4.5rem;
   font-weight: 700;
-  letter-spacing: 15px;
+  letter-spacing: 1.2rem;
 }
 
 .tagline {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
-  letter-spacing: 3px;
-  margin-top: 10px;
+  letter-spacing: 0.1em;
+  margin-top: 0.8rem;
 }
 
 .email {
   display: block;
-  font-size: 20px;
+  font-size: 3rem;
   font-weight: 300;
   color: #81899c;
-  margin-top: 15px;
+  margin-top: 1.2rem;
   display: flex;
   justify-content: center;
 }
 
-.icons {
-  font-size: 0.9rem;
-  margin-top: 50px;
+.icons span {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 
-.icons span {
-  border-radius: 5px;
-  padding: 3px 5px;
+.icon-style {
+  font-size: 3rem;
+  display: inline-block;
+  color: #81899c;
+  text-align: center;
+}
+
+.icon-style:hover {
+  color: #3e70bb;
 }
 
 .icon-cv:before {
@@ -100,36 +107,68 @@ body {
 
 .icon-github:before {
   content: "\e902";
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .icon-linkedin:before {
   content: "\e903";
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .icon-upwork:before {
   content: "\e904";
-}
-
-.icon-style {
-  display: inline-block;
-  font-size: 45px;
-  width: 1em;
-  color: #81899c;
+  display: table-cell;
   text-align: center;
-}
-
-.icon-style:hover {
-  color: #3e70bb;
+  vertical-align: middle;
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  margin-bottom: 20px;
   width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #ffffff;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.links {
+  font-size: 1.2rem;
+  display: flex;
+  float: right;
+}
+
+.links span {
+  display: inline-block;
+  padding-right: 3rem;
+}
+
+.links span a {
+  color: #81899c;
+  display: table;
+}
+
+.links span a:hover {
+  color: #3e70bb;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  background: #ffffff;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  z-index: 100;
+  overflow: hidden;
 }
 
 .noselect {

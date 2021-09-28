@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Luka Čupić</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
 
     <link
       rel="stylesheet"
@@ -18,32 +18,52 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+
     <link rel="stylesheet" href="/styles/projects.css" />
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
   </head>
 
   <body>
-    <div style="text-align: center">
-      <div class="sections-title">Personal Projects</div>
+    <div class="header noselect">
+      <div class="links">
+        <span>
+          <a href="/index.html">Home</a>
+        </span>
+        <span>
+          <a href="/projects.html">Portfolio</a>
+        </span>
+        <span>
+          <a href="/documents/CV.pdf" target="_blank">CV</a>
+        </span>
+        <div style="min-width: 15rem"></div>
+      </div>
     </div>
-
-    <div class="sections">
-      <!-- <div
-        style="
-          float: center;
-          position: relative;
-          left: 25%;
-          margin-bottom: 50px;
-        "
-      >
-        <a href="index.html">
-          <i class="icon-linkedin icon-style"></i>
-          Back
-        </a>
-      </div> -->
-
+  
+    <div class="projects-container noselect">
       <div class="row">
         <div id="root"></div>
+      </div>
+
+    <div class="footer noselect">
+      <div class="icons">
+        <span>
+          <a href="https://www.linkedin.com/in/lukacupic" target="_blank">
+            <i class="icon-linkedin icon-style"></i>
+          </a>
+        </span>
+        <span>
+          <a href="https://github.com/lukacupic" target="_blank">
+            <i class="icon-github icon-style"></i>
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://www.upwork.com/freelancers/~019d9e01042d09bc2c"
+            target="_blank"
+          >
+            <i class="icon-upwork icon-style"></i>
+          </a>
+        </span>
       </div>
     </div>
 
@@ -51,6 +71,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
-    <script src="/scripts/script.js"></script>
+    <script src="/scripts/projects.js"></script>
   </body>
 </html>

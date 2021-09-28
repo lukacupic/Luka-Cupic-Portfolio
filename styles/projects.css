@@ -26,10 +26,13 @@
   color: #7699c2;
 }
 
-.container {
-  padding-left: 400px;
+.projects-container {
   height: auto;
-  margin: 60px auto;
+  margin-top: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -65,12 +68,6 @@ p {
 
 strong {
   font-weight: 600;
-}
-
-.sections {
-  vertical-align: top;
-  display: inline-block;
-  height: auto;
 }
 
 .sections-title {
