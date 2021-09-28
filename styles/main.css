@@ -1,4 +1,10 @@
-@import url("/fonts/lato.ttf");
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/lato.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
 @font-face {
   font-family: "icomoon";
@@ -39,7 +45,7 @@
 }
 
 body {
-  font: 16px Lato;
+  font: 16px Lato, sans-serif;
 }
 
 .container {
