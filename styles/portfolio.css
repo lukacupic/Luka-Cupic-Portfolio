@@ -113,6 +113,14 @@ strong {
   line-height: 22px;
 }
 
+.card-style {
+  width: 30rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3.5rem;
+  flex-grow: 0;
+}
+
 .card-title {
   line-height: 140%;
   margin-bottom: 20px;
@@ -121,6 +129,18 @@ strong {
 .card-reveal div,
 p {
   margin-bottom: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  min-width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.website-title {
+  font-size: 1.1rem;
 }
 
 .zoom {
@@ -243,3 +263,16 @@ p {
 .unity span::after {
   content: "Unity 3D";
 }
+
+/* Media */
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .card-style {
+    width: auto;
+  }
+}
+
+/* Media end */

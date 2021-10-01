@@ -134,15 +134,7 @@ class EmptyCard extends React.Component {
     const style = {};
 
     return React.createElement("div", {
-      className: "col m4",
-      style: {
-        // width: "350px",
-        width: "30rem",
-        marginRight: "50px",
-        marginBottom: "50px",
-        marginRight: "auto",
-        flexGrow: "0",
-      },
+      className: " card-style",
     });
   }
 }
@@ -154,15 +146,7 @@ class Card extends React.Component {
     return React.createElement(
       "div",
       {
-        className: "col m4",
-        style: {
-          // width: "350px",
-          width: "30rem",
-          marginRight: "50px",
-          marginBottom: "50px",
-          marginRight: "auto",
-          flexGrow: "0",
-        },
+        className: "col card-style",
       },
       React.createElement(
         "div",
@@ -190,7 +174,7 @@ class Card extends React.Component {
             "span",
             {
               className: "card-title activator grey-text text-darken-4",
-              style: { height: "96px" },
+              style: { height: "10vh" },
             },
             this.props.data.project
           ),
@@ -209,7 +193,7 @@ class Card extends React.Component {
                     {
                       href: this.props.data.website,
                       target: "_blank",
-                      style: { fontSize: "1.1rem" },
+                      className: "website-title",
                     },
                     this.props.data.clickname == null
                       ? "Website"
@@ -317,13 +301,7 @@ function Projects(props) {
   return React.createElement(
     "div",
     {
-      style: {
-        display: "flex",
-        minWidth: "100%",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        justifyContent: "start",
-      },
+      className: "card-wrapper",
     },
     projects
   );

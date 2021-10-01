@@ -48,24 +48,34 @@ body {
 
 .container {
   height: auto;
-  margin-top: 13%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  -webkit-transform: translate(-50%, -35%);
+  -moz-transform: translate(-50%, -35%);
+  -o-transform: translate(-50%, -35%);
+  -ms-transform: translate(-50%, -35%);
 }
 
 .name {
   font-size: 4.5rem;
   font-weight: 700;
   letter-spacing: 1.2rem;
+  text-align: center;
 }
 
 .tagline {
   font-size: 1.2rem;
+  line-height: 2rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   margin-top: 0.8rem;
+  text-align: center;
 }
 
 .email {
@@ -101,7 +111,7 @@ body {
 }
 
 .icon-style {
-  font-size: 3rem;
+  font-size: 2.8rem;
   display: inline-block;
   color: #81899c;
   text-align: center;
@@ -140,13 +150,6 @@ body {
   vertical-align: middle;
 }
 
-.icon-logo:before {
-  content: "\e905";
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
 /* Footer end */
 
 /* Header */
@@ -158,10 +161,17 @@ body {
   top: 0;
   width: 100%;
   background: #ffffff;
-  padding-top: 4rem;
-  padding-bottom: 1rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
   z-index: 100;
   overflow: hidden;
+}
+
+.icon-logo:before {
+  content: "\e905";
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .links {
@@ -188,29 +198,3 @@ body {
 }
 
 /* Header end */
-
-/* Media */
-
-@media (max-width: 1024px) {
-  .container {
-    padding: 15px;
-    margin: 0px auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 425px) {
-  li .point {
-    display: none;
-  }
-  .container {
-    margin: 0px;
-  }
-}
-
-/* Media end */
