@@ -1,9 +1,9 @@
-const data = [
+const softwareData = [
   {
     project: "Trading API (2020.)",
     stack: ["java", "javafx"],
     description:
-      "A software bot which uses brokerage API to perform semi-automated stock trading",
+      "A software bot which uses brokerage API to perform semi-automated stock trading.",
     github: "https://github.com/lukacupic/TradingAPI",
     image: "/backgrounds/Trading.jpg",
     status: "In Development",
@@ -12,7 +12,7 @@ const data = [
     project: "Droidio — A Star Wars Generator (2020.)",
     stack: ["js", "html", "css"],
     description:
-      "A simple web tool for generating the names of random things from the Star Wars universe",
+      "A simple web tool for generating the names of random things from the Star Wars universe.",
     website: "https://droidio.netlify.app/",
     github: "https://github.com/lukacupic/Droidio",
     image: "/backgrounds/Droidio.jpg",
@@ -43,7 +43,7 @@ const data = [
     project: "Hamming Simulator (2019.)",
     stack: ["js", "html", "css"],
     description:
-      "Web simulator of a data transmission system which uses the Hamming code for error detection and correction",
+      "Web simulator of a data transmission system which uses the Hamming code for error detection and correction.",
     website:
       "https://ferko.fer.hr/diglog-demo/hammingov-kod/hamming/index.html",
     github: "https://github.com/lukacupic/Hamming-Simulator",
@@ -63,7 +63,7 @@ const data = [
   //   project: "Document Management and Search System (2018.)",
   //   stack: ["java", "javafx"],
   //   description:
-  //     "Desktop-based application and search engine for managing and visualizing PDF documents",
+  //     "Desktop-based application and search engine for managing and visualizing PDF documents.",
   //   github:
   //     "https://github.com/lukacupic/PDF-Document-Management-and-Search-System",
   //   image: "/backgrounds/Coming_Soon.jpg",
@@ -72,7 +72,7 @@ const data = [
   {
     project: "PiX (2018.)",
     stack: ["java", "swing"],
-    description: "Simple image editor with several image processing tools",
+    description: "Simple image editor with several image processing tools.",
     github: "https://github.com/lukacupic/PiX",
     image: "/backgrounds/PiX.jpg",
     status: "In Development",
@@ -81,7 +81,7 @@ const data = [
     project: "Buffons's Needle Simulator (2017.)",
     stack: ["java", "swing"],
     description:
-      "Simulator of the Buffon's needle problem which uses the Monte Carlo method for approximating the number π",
+      "Simulator of the Buffon's needle problem which uses the Monte Carlo method for approximating the number π.",
     github: "https://github.com/lukacupic/Buffons-Needle-Simulator",
     image: "/backgrounds/Buffon.jpg",
     status: "Finished",
@@ -89,10 +89,32 @@ const data = [
   {
     project: "RProject (2017.)",
     stack: ["java", "swing"],
-    description: "Simple simulator of the Risk board game",
+    description: "Simple simulator of the Risk board game.",
     github: "https://github.com/lukacupic/RProject",
     image: "/backgrounds/Risk.jpg",
     status: "In Development",
+  },
+];
+
+const musicData = [
+  {
+    project: "Iter",
+    stack: ["guitar", "acoustic", "electric"],
+    description: "Mostly-acoustic LP.",
+    website: "https://soundcloud.com/lukacupic/sets/iter",
+    image: "/backgrounds/iter.jpeg",
+    status: "Finished",
+  },
+];
+
+const writingData = [
+  {
+    project: "The General Scribbler",
+    stack: ["history", "philosophy"],
+    description: "Personal blog about wordly topics.",
+    website: "https://thegeneralscribbler.com/",
+    image: "/backgrounds/TGS.jpg",
+    status: "",
   },
 ];
 
@@ -288,12 +310,17 @@ function StackIcons(props) {
 function Projects(props) {
   const projects = [];
 
-  const data = props.data;
+  const category = document.getElementById("root").className;
+
+  let data = null;
+  if (category == "software") data = softwareData;
+  if (category == "music") data = musicData;
+  if (category == "writing") data = writingData;
+
   data.forEach((item) => {
     projects.push(React.createElement(Card, { data: item }));
   });
 
-  const emptyData = props.emptyData;
   emptyData.forEach((item) => {
     projects.push(React.createElement(EmptyCard, { data: item }));
   });
@@ -309,10 +336,7 @@ function Projects(props) {
 
 ReactDOM.render(
   React.createElement(Layout, {
-    children: React.createElement(Projects, {
-      data: data,
-      emptyData: emptyData,
-    }),
+    children: React.createElement(Projects),
   }),
   document.getElementById("root")
 );

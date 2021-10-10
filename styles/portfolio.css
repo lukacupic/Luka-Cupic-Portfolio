@@ -26,9 +26,18 @@
   color: #7699c2;
 }
 
+.portfolio-container {
+  height: auto;
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .projects-container {
   height: auto;
-  margin-top: 13%;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,6 +161,39 @@ p {
   transform: scale(1.15);
 }
 
+/* Categories */
+
+.categories {
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.categories span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.categories span a {
+  color: #81899c;
+  display: table;
+  padding-bottom: 0.1rem;
+}
+
+.categories span a:hover {
+  color: #3e70bb;
+}
+
+.selected-category {
+  border-bottom: 0.15rem solid black;
+}
+
+/* Categories end */
+
+/* ... */
+
 .java {
   background: #bad5f5;
 }
@@ -262,6 +304,41 @@ p {
 }
 .unity span::after {
   content: "Unity 3D";
+}
+
+.guitar {
+  background: #afeae5;
+}
+.guitar span::after {
+  content: "Guitar";
+}
+
+.acoustic {
+  background: #afeae5;
+}
+.acoustic span::after {
+  content: "Acoustic";
+}
+
+.electric {
+  background: #afeae5;
+}
+.electric span::after {
+  content: "Electric";
+}
+
+.history {
+  background: #afeae5;
+}
+.history span::after {
+  content: "History";
+}
+
+.philosophy {
+  background: #afeae5;
+}
+.philosophy span::after {
+  content: "Philosophy";
 }
 
 /* Media */

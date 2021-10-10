@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
+    <link rel="stylesheet" href="/styles/portfolio.css" />
     <link rel="stylesheet" href="/styles/index.css" />
   </head>
 
@@ -41,11 +42,25 @@
       </div>
     </div>
 
-    <div class="container noselect">
-      <div class="name">LUKA ČUPIĆ</div>
-      <!-- <span class="email">luka@anix.hr</span> -->
-      <div class="tagline">
-        A GUY WHO SPENT WAY TOO MUCH TIME DESIGNING THIS PAGE
+    <div class="portfolio-container">
+      <div class="categories">
+        <span>
+          <a href="/pages/portfolio/software.html">Software</a>
+        </span>
+        <span>
+          <a href="/pages/portfolio/music.html">Music</a>
+        </span>
+        <span>
+          <a href="/pages/portfolio/writing.html" class="selected-category"
+            >Writing</a
+          >
+        </span>
+      </div>
+
+      <div class="projects-container noselect">
+        <div class="row">
+          <div id="root" class="writing"></div>
+        </div>
       </div>
     </div>
 
@@ -76,5 +91,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
+    <script type="module" src="/scripts/projects.js"></script>
   </body>
 </html>
