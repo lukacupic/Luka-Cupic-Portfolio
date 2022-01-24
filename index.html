@@ -1,245 +1,746 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-    <meta charset="UTF-8">
-    <title>Luka Čupić</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+		<title>Luka Čupić</title>
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/cursor.css">
-</head>
+		<!-- Favicons -->
+		<link href="assets/img/favicon.png" rel="icon" />
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-<body>
-    <div class="hero-container">
-        <div class="hero">
-            <h1 class="name"><strong>Luka</strong> Čupić</h1>            
-            <span class="email">lukacupic42@gmail.com</span>
+		<!-- Vendor CSS Files -->
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+		<link href="assets/vendor/font-awesome/css/all.css" rel="stylesheet" />
+		<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+		<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-            <div class='icon'>
-                <span>
-                    <a href="https://github.com/lukacupic">
-                        <i class="icon-github icon-style"></i>
-                    </a>
-                </span>
-                <span>
-                    <a href="https://www.linkedin.com/in/lukacupic">
-                        <i class="icon-linkedin icon-style"></i>
-                    </a>
-                </span>
-                <span>
-                    <a href="https://www.upwork.com/freelancers/~019d9e01042d09bc2c">
-                        <i class="icon-upwork icon-style"></i>
-                    </a>
-                </span>
-            </div>
-        </div>
-    </div>
+		<!-- Template Main CSS File -->
+		<link href="assets/css/style.css" rel="stylesheet" />
+	</head>
 
-    <!-- Skills and intrest section -->
-    <div class="hero-container">
-        <div class="sections">
-            <h2 class="section-title">Skills</h2>
+	<body>
+		<!-- ======= Header ======= -->
+		<header id="header" class="fixed-top">
+			<div class="container d-flex align-items-center justify-content-between">
+				<h1 class="logo"><a href="index.html">Luka Čupić</a></h1>
+				<nav id="navbar" class="navbar">
+					<ul>
+						<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+						<li><a class="nav-link scrollto" href="#about">About</a></li>
+						<li><a class="nav-link scrollto" href="#services">Services</a></li>
+						<li><a class="nav-link scrollto" href="#interests">Interests</a></li>
+						<li><a class="nav-link scrollto" href="#work">Work</a></li>
+					</ul>
+					<i class="bi bi-list mobile-nav-toggle"></i>
+				</nav>
+			</div>
+		</header>
+		<!-- End Header -->
 
-            <div class="list-card">
-                <span class="skill-exp">+ 4 years</span>
-                <div>
-                    <h3>Object-Oriented Programming</h3>
-                    <span>Java, Scala, Python, C++, Dart, Design Patterns, SOLID</span>
-                </div>
-            </div>
+		<!-- ======= Hero Section ======= -->
+		<div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+			<div class="overlay-itro"></div>
+			<div class="hero-content display-table">
+				<div class="table-cell">
+					<div class="container">
+						<h1 class="hero-title mb-4">I'm Luka.</h1>
+						<p class="hero-subtitle">
+							<span
+								class="typed"
+								data-typed-items="Musician, Computer Scientist, Software Engineer, Machine Learning Engineer, Writer, Freelance Software Developer, Audio Engineer, Graphic Artist, Video Editor, Amateur Filmmaker, 3D Artist, Amateur Astronomer"
+							></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Hero Section -->
 
-            <div class="list-card">
-                <span class="skill-exp">+ 3 years</span>
-                <div>
-                    <h3>Web Development</h3>
-                    <span>Spring Boot, HTML, CSS, JavaScript, Node.js, Selenium</span>
-                </div>
-            </div>
+		<main id="main">
+			<!-- ======= About Section ======= -->
+			<section id="about" class="about-mf sect-pt4 route">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="box-shadow-full">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-sm-6 col-md-5">
+												<div class="about-img">
+													<img src="assets/img/portrait.jpg" class="img-fluid rounded b-shadow-a" alt="" />
+												</div>
+											</div>
+											<div class="col-sm-6 col-md-7">
+												<div class="about-info">
+													<p><span class="title-s">Name: </span> <span>Luka Čupić</span></p>
+													<p><span class="title-s">Age: </span> <span id="age"></span></p>
+													<p><span class="title-s">Contact: </span> <span>luka@anix.hr</span></p>
+													<p><span class="title-s">Last known location: </span> <span>Zagreb, Croatia</span></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="about-me pt-4 pt-md-0">
+											<div class="title-box-2">
+												<h5 class="title-left">About me</h5>
+											</div>
+											<p class="lead">
+												I'm a recent Computer Science graduate from Croatia with plenty of academic and practical
+												experience. I've worked on dozens of projects with a number of diverse technologies for desktop,
+												mobile, and web development.
+											</p>
+											<p class="lead">
+												On many of these projects, I've developed strong multifaceted skills in different areas such as
+												machine learning, graphic design, business and finance management, technical writing, etc.
+											</p>
+											<p class="lead">
+												With this experience, I gained a deep understanding of how things work under the hood. I'm able
+												to use this knowledge for solving a wide range of technological problems and for applying it on
+												multidisciplinary projects for creative and altruistic causes.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End About Section -->
 
-            <div class="list-card">
-                <span class="skill-exp">+ 3 years</span>
-                <div>
-                    <h3>Artificial Intelligence</h3>
-                    <span>Machine Learning, Deep Learning, Evolutionary Algorithms, Tensorflow, OpenCV</span>
-                </div>
-            </div>
+			<!-- ======= Services Section ======= -->
+			<section id="services" class="services-mf pt-5 route">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="title-box text-center">
+								<h3 class="title-a">Services</h3>
+								<p class="subtitle-a">Some of the things I'm good at:</p>
+								<div class="line-mf"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="service-box">
+								<div class="service-ico">
+									<span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+								</div>
+								<div class="service-content">
+									<h2 class="s-title">Software Development</h2>
+									<p class="s-description text-center">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+										provident vitae! Magni tempora perferendis eum non provident.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-box">
+								<div class="service-ico">
+									<span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+								</div>
+								<div class="service-content">
+									<h2 class="s-title">Machine Learning</h2>
+									<p class="s-description text-center">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+										provident vitae! Magni tempora perferendis eum non provident.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-box">
+								<div class="service-ico">
+									<span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+								</div>
+								<div class="service-content">
+									<h2 class="s-title">Writing</h2>
+									<p class="s-description text-center">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+										provident vitae! Magni tempora perferendis eum non provident.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-box">
+								<div class="service-ico">
+									<span class="ico-circle"><i class="bi bi-binoculars"></i></span>
+								</div>
+								<div class="service-content">
+									<h2 class="s-title">Audio and Music</h2>
+									<p class="s-description text-center">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+										provident vitae! Magni tempora perferendis eum non provident.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-box">
+								<div class="service-ico">
+									<span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
+								</div>
+								<div class="service-content">
+									<h2 class="s-title">Graphic and 3D Design</h2>
+									<p class="s-description text-center">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+										provident vitae! Magni tempora perferendis eum non provident.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-box">
+								<div class="service-ico">
+									<span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+								</div>
+								<div class="service-content">
+									<h2 class="s-title">Business</h2>
+									<p class="s-description text-center">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+										provident vitae! Magni tempora perferendis eum non provident.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Services Section -->
 
-            <div class="list-card">
-                <span class="skill-exp">+ 2 years</span>
-                <div>
-                    <h3>Mobile Development</h3>
-                    <span>Android, Flutter</span>
-                </div>
-            </div>
+			<!-- ======= Interests Section ======= -->
+			<section id="interests" class="interests-mf pt-5 route">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="title-box text-center">
+								<h3 class="title-a">Interests</h3>
+								<p class="hero-subtitle">Other interests include (but aren't limited to):</p>
+								<div class="line-mf"></div>
+								<table style="margin-left: auto; margin-right: auto">
+									<tr>
+										<td>
+											<i class="fa fa-headphones icon"></i>
+											Audio Production
+										</td>
+										<td>
+											<i class="fa fa-globe-africa icon"></i>
+											Geoinformatics
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fa fa-water icon"></i>
+											Oceanography
+										</td>
+										<td><i class="fas fa-paint-brush icon"></i> Digital Art</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fa fa-stethoscope icon"></i>
+											Medicine
+										</td>
+										<td>
+											<i class="fa fa-leaf icon"></i>
+											Environmentalism
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fa fa-landmark icon"></i>
+											History
+										</td>
+										<td>
+											<i class="fa fa-rocket icon"></i>
+											Astronomy
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<i class="fa fa-lightbulb icon"></i>
+											Philosophy
+										</td>
+										<td>
+											<i class="fa-icon icon"></i>
+											Karate
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Interests Section -->
 
-            <div class="list-card">
-                <span class="skill-exp">+ 4 years</span>
-                <div>
-                    <h3>General Computing</h3>
-                    <span>Scripting, Automation, Git, C, Linux</span>
-                </div>
-            </div>
+			<!-- ======= Portfolio Section ======= -->
+			<section id="work" class="portfolio-mf sect-pt4 route">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="title-box text-center">
+								<h3 class="title-a">Portfolio</h3>
+								<p class="subtitle-a">A collection of (personal) projects on which I've worked on</p>
+								<div class="line-mf"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="work-box">
+								<a
+									target="_blank"
+									href="https://medium.com/@lukacupic/neural-speech-synthesis-using-forwardtacotron-and-wavernn-53c0dd942ac6"
+								>
+									<div class="work-img">
+										<img src="assets/img/projects/Speech.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">Neural Speech Synthesis using ForwardTacotron and WaveRNN</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Machine Learning</span> / <span class="w-date">2021.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a
+													target="_blank"
+													href="https://medium.com/@lukacupic/neural-speech-synthesis-using-forwardtacotron-and-wavernn-53c0dd942ac6"
+												>
+													<span class="fa fa-link"></span
+												></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://github.com/lukacupic/OpenSkyDemo">
+									<div class="work-img">
+										<img src="assets/img/projects/Sky.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">OpenSky Demo</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Flight Tracking Software</span> / <span class="w-date">2021.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a target="_blank" href="https://github.com/lukacupic/OpenSkyDemo">
+													<span class="fa fa-link"></span
+												></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://github.com/lukacupic/Reddop">
+									<div class="work-img">
+										<img src="assets/img/projects/Reddop.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">Reddop</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Web Browser Extension</span> / <span class="w-date">2021.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a target="_blank" href="https://github.com/lukacupic/Reddop">
+													<span class="fa fa-link"></span
+												></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://soundcloud.com/lukacupic/sets/iter">
+									<div class="work-img">
+										<img src="assets/img/projects/Iter.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">Iter</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Solo Album</span> / <span class="w-date">2020.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a target="_blank" href="https://soundcloud.com/lukacupic/sets/iter">
+													<span class="fa fa-link"></span
+												></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://github.com/lukacupic/Trading-Bot">
+									<div class="work-img">
+										<img src="assets/img/projects/Trading.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">Trading Bot</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Stock Trading Automation</span> / <span class="w-date">2020.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a target="_blank" href="https://github.com/lukacupic/Trading-Bot">
+													<span class="fa fa-link"></span
+												></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://droidio.netlify.app/">
+									<div class="work-img">
+										<img src="assets/img/projects/Droidio.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">Droidio</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Web Design</span> / <span class="w-date">2020.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a target="_blank" href="https://droidio.netlify.app/"> <span class="fa fa-link"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://github.com/lukacupic/Classification-of-Musical-Instruments">
+									<div class="work-img">
+										<img src="assets/img/projects/Music2.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">Classification of Music Based on Machine Learning</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Machine Learning</span> / <span class="w-date">2020.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a target="_blank" href="https://github.com/lukacupic/Classification-of-Musical-Instruments">
+													<span class="fa fa-link"></span
+												></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://lukacupic.github.io/documents/IR.pdf">
+									<div class="work-img">
+										<img src="assets/img/projects/IR.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">Implementation of an Information Retrieval System</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Machine Learning</span> / <span class="w-date">2019.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a target="_blank" href="https://lukacupic.github.io/documents/IR.pdf">
+													<span class="fa fa-link"></span
+												></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://ferko.fer.hr/diglog-demo/hammingov-kod/hamming/index.html">
+									<div class="work-img">
+										<img src="assets/img/projects/Hamming.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">Hamming Simulator</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Simulation Software</span> / <span class="w-date">2019.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a target="_blank" href="https://ferko.fer.hr/diglog-demo/hammingov-kod/hamming/index.html">
+													<span class="fa fa-link"></span
+												></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://github.com/lukacupic/PDF-Document-Management-and-Search-System">
+									<div class="work-img">
+										<img src="assets/img/projects/PDF-System.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">PDF Document Management and Search System</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Artificial Intelligence</span> / <span class="w-date">2018.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a
+													target="_blank"
+													href="https://github.com/lukacupic/PDF-Document-Management-and-Search-System"
+												>
+													<span class="fa fa-link"></span
+												></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://ferko.fer.hr/data-repo/proj/5/">
+									<div class="work-img">
+										<img src="assets/img/projects/Marko.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">Super Marko AI</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Game Development</span> /
+												<span class="w-date">2018.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a target="_blank" href="https://ferko.fer.hr/data-repo/proj/5/">
+													<span class="fa fa-link"></span
+												></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://github.com/lukacupic/PiX">
+									<div class="work-img">
+										<img src="assets/img/projects/PiX.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">PiX</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Graphics Software Development</span> / <span class="w-date">2018.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a target="_blank" href="https://github.com/lukacupic/PiX"> <span class="fa fa-link"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://github.com/lukacupic/Buffons-Needle-Simulator">
+									<div class="work-img">
+										<img src="assets/img/projects/Buffon.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">Buffons's Needle Simulator</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Simulation Software</span> / <span class="w-date">2017.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a target="_blank" href="https://github.com/lukacupic/Buffons-Needle-Simulator">
+													<span class="fa fa-link"></span
+												></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a target="_blank" href="https://github.com/lukacupic/RProject">
+									<div class="work-img">
+										<img src="assets/img/projects/Risk.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">RProject</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Game Development</span> / <span class="w-date">2017.</span>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="w-like">
+												<a target="_blank" href="https://github.com/lukacupic/RProject">
+													<span class="fa fa-link"></span
+												></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<a>
+									<div class="work-img">
+										<img src="assets/img/projects/JURI2.jpg" alt="" class="img-fluid" />
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<h2 class="w-title">JURI — Jedinstvena Umjetna Računalna Inteligencija</h2>
+											<div class="w-more">
+												<span class="w-ctegory">Artificial Intelligence</span> / <span class="w-date">2013.</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Portfolio Section -->
+		</main>
+		<!-- End #main -->
 
+		<!-- ======= Footer ======= -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="copyright-box">
+							<div class="socials">
+								<ul>
+									<li>
+										<a href="https://github.com/lukacupic" target="_blank">
+											<i class="fab fa-github contact-icon"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/lukacupic/" target="_blank">
+											<i class="fab fa-linkedin-in contact-icon"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/lukacupic42/" target="_blank">
+											<i class="fab fa-instagram contact-icon"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="credits" id="year">2022</div>
+							<div class="credits">Special thanks to <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-            <div class="list-card">
-                <span class="skill-exp">+ 10 years</span>
-                <div>
-                    <h3>Photo, Video, and Audio Processing</h3>
-                    <span>Photoshop, Premiere, After Effects, Audacity</span>
-                </div>
-            </div>
-        </div>
-    </div>
+		<div id="preloader"></div>
+		<a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+			><i class="bi bi-arrow-up-short"></i
+		></a>
 
-    <div class="hero-container">
-        <ol class="timeline">
-            <li>
-                <div>
-                    <p class="line">Work Experience</p>
-                    <span class="point"></span>
-                    <p class="description">
-                        <b>Full-Stack Developer & UI Designer</b><br>
-                        Dragonfly — File Sharing Service
-                    </p>
-                    <span class="date">Sep. 2019 – Present</span><br>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <span class="point"></span>
-                    <p class="description">
-                        <b>Technical Writer</b><br>
-                        <a href="https://www.stackabuse.com/author/lukacupic/">Stack Abuse</a>, Unstack Software LLC
-                    </p>
-                    <span class="date">Feb. 2020 – Sep. 2020</span>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <span class="point"></span>
-                    <p class="description">
-                        <b>Project Assistant</b><br>
-                        Convergent Media Group Croatia
-                    </p>
-                    <span class="date">Jul. 2019 – Aug. 2019</span>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <span class="point"></span>
-                    <p class="description">
-                        <b>Backend Development Intern</b><br>
-                        Rimac Automobili
-                    </p>
-                    <span class="date">Jul. 2018 – May 2019</span>
-                </div>
-            </li>
-        </ol>
-    </div>
+		<!-- Vendor JS Files -->
+		<script src="assets/vendor/purecounter/purecounter.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<script src="assets/vendor/typed.js/typed.min.js"></script>
+		<script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <div style="margin-bottom: 225px;"></div>
+		<!-- Template Main JS File -->
+		<script src="assets/js/main.js"></script>
 
-    <div class="hero-container">
-        <ol class="timeline">
-            <li>
-                <div>
-                    <p class="line">Education</p>
-                    <span class="point"></span>
-                    <p class="description">
-                        <b>BSc/MSc in Computer Science</b><br>
-                        Faculty of Electrical Engineering and Computing, Croatia
-                    </p>
-                    <span class="date">Jul. 2015 – Jul. 2020</span>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <span class="point"></span>
-                    <p class="description">
-                        <b>Computer Science Erasmus+</b><br>
-                        Radboud University Nijmegen, The Netherlands
-                    </p>
-                    <span class="date">Sep. 2019 – Jan. 2020</span>
-                </div>
-            </li>
-        </ol>
-    </div>
-
-    <div style="margin-bottom: 250px;"></div>
-
-    <div class="hero-container">
-        <ol class="timeline">
-            <li>
-                <div>
-                    <p class="line">Volunteering</p>
-                    <span class="point"></span>
-                    <p class="description">
-                        <b>Volunteer at VCI</b><br>
-                        Volunteer at the Volunteer Centre Istria
-                    </p>
-                    <span class="date">Aug. 2020 – Present</span>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <span class="point"></span>
-                    <p class="description">
-                        <b>Community moderator at CroAI</b><br>
-                        Responsible for communication with people and assistance with the online Elements of AI course
-                    </p>
-                    <span class="date">Jul. 2020 – Present</span>
-                </div>
-            </li>
-        </ol>
-    </div>
-
-    <div style="margin-bottom: 300px;"></div>
-
-    <div class="hero-container" style="margin-bottom: 80px;">
-        <h2 class="section-title">Some Nice Words</h2>
-        <div class="recommendation">
-            When Luka joined CMGC as an intern, I had the pleasure of showing him around and giving him a crash course
-            on the technologies we use. I was amazed by his adaptability, talent and learning speed. He would ask the
-            right
-            questions, always looking to improve and build upon his knowledge and experience. Luka easily tackled any
-            task
-            given to him and has left a very positive impression on the whole dev team.<br>
-            — Alen D., Convergent Media Group
-        </div> <br>
-
-        <div class="recommendation">
-            Luka is great to work with. I would like to thank him for all the work he has put in, because he really
-            worked day and night for the past week to get the game all done.<br>
-            — Chai S., Augustus
-        </div> <br>
-
-        <div class="recommendation">
-            Luka did some great work while writing with us! It's sad to see him go after a while, but life takes people
-            on different paths. We'd definitely like to work with him again if an opportunity arises!<br>
-            — David L., <a href="https://www.stackabuse.com/author/lukacupic/">Stack Abuse</a>
-        </div>
-    </div>
-
-    <div class="hero-container">
-        <div class="sections">
-            <h2 class="section-title">Personal Projects</h2>
-            <div class="row">
-                <div id="root"></div>
-            </div>
-        </div>
-    </div>
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js'></script>
-    <script src="./script.js"></script>
-
-</body>
-
+		<!-- Custom JS -->
+		<script src="assets/js/custom.js"></script>
+	</body>
 </html>
