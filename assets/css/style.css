@@ -850,6 +850,18 @@ td {
 }
 .service-box .s-description {
 	color: #4e4e4e;
+	text-align: justify;
+	text-align-last: left;
+	-ms-text-align-last: left;
+	height: 90px;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+}
+
+.lead {
+	text-align: justify;
+	text-align-last: left;
+	-ms-text-align-last: left;
 }
 
 /*--------------------------------------------------------------
