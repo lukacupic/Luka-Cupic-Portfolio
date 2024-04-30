@@ -1,5 +1,1 @@
-[[redirects]]
-  from = "/vietnam"
-  to = "https://thevietnamexperience.netlify.app/"
-  status = 200
-  force = true
+/vietnam    https://thevietnamexperience.netlify.app/
