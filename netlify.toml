@@ -1,3 +1,4 @@
+# Vietnam
 [[redirects]]
   from = "/vietnam*"
   to = "https://thevietnamexperience.netlify.app/:splat"
@@ -15,3 +16,36 @@
   to = "https://thevietnamexperience.netlify.app/assets/:splat"
   status = 200
   force = true
+
+
+# Thailand
+[[redirects]]
+  from = "/vietnam*"
+  to = "https://athaistory.netlify.app/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/assets/data/thailand/index.json"
+  to = "https://athaistory.netlify.app/assets/data/index.json"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/assets/*"
+  to = "https://athaistory.netlify.app/assets/:splat"
+  status = 200
+  force = true
+
+
+
+
+
+
+
+
+
+
+
+
+  https://athaistory.netlify.app/
