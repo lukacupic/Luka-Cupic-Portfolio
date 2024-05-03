@@ -3,15 +3,3 @@
   to = "https://thevietnamexperience.netlify.app/:splat"
   status = 200
   force = true
-
-[[redirects]]
-  from = "/assets/data/travel/vietnam/index.json"
-  to = "https://thevietnamexperience.netlify.app/assets/data/index.json"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/assets/*"
-  to = "https://thevietnamexperience.netlify.app/assets/:splat"
-  status = 200
-  force = true
