@@ -5,7 +5,7 @@
   force = true
 
 [[redirects]]
-  from = "/assets/data/vietnam/index.json"
+  from = "/assets/data/travel/vietnam/index.json"
   to = "https://thevietnamexperience.netlify.app/assets/data/index.json"
   status = 200
   force = true
