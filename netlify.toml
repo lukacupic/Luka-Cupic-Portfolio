@@ -3,3 +3,9 @@
   to = "https://thevietnamexperience.netlify.app/:splat"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/assets/*"
+  to = "https://thevietnamexperience.netlify.app/assets/:splat"
+  status = 200
+  force = true
