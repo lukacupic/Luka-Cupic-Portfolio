@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/vietnam*"
+  from = "/travel/vietnam*"
   to = "https://thevietnamexperience.netlify.app/:splat"
   status = 200
   force = true
