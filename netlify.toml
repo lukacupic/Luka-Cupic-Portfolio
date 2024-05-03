@@ -1,6 +1,12 @@
 [[redirects]]
-  from = "/travel/vietnam*"
+  from = "/vietnam*"
   to = "https://thevietnamexperience.netlify.app/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/assets/data/vietnam/index.json"
+  to = "https://thevietnamexperience.netlify.app/assets/data/index.json"
   status = 200
   force = true
 
