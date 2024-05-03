@@ -20,7 +20,7 @@
 
 # Thailand
 [[redirects]]
-  from = "/vietnam*"
+  from = "/thailand*"
   to = "https://athaistory.netlify.app/:splat"
   status = 200
   force = true
