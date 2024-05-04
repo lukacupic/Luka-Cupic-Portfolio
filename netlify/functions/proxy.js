@@ -2,8 +2,7 @@ exports.handler = async function (event, context) {
   const url = "https://thevietnamexperience.netlify.app" + event.rawPath;
 
   try {
-    // Use Gridsome's built-in fetch method to make HTTP requests
-    const response = await context.fetch(url);
+    const response = await fetch(url); // Using fetch API for HTTP request
     const data = await response.text();
 
     return {
