@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/vietnam/*"
-  to = "https://thevietnamexperience.netlify.app"
+  to = "/.assets/js/proxy"
   status = 200
