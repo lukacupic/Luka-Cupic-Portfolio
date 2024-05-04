@@ -1,6 +1,4 @@
-# Vietnam
 [[redirects]]
-  from = "https://lukacupic.com/vietnam/*"
-  to = "https://thevietnamexperience.netlify.app/:splat"
+  from = "/vietnam/*"
+  to = "/.netlify/functions/proxy"
   status = 200
-  
