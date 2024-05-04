@@ -3,4 +3,4 @@
   from = "https://lukacupic.com/vietnam/*"
   to = "https://thevietnamexperience.netlify.app/:splat"
   status = 200
-  force = true
+  
