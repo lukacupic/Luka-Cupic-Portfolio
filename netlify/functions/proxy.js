@@ -1,9 +1,9 @@
 exports.handler = async function (event, context) {
   const url = "https://thevietnamexperience.netlify.app" + event.path;
-  console.log(event.path);
+  console.log("test " + event.path);
 
   try {
-    const response = await fetch(url); // Using fetch API for HTTP request
+    const response = await fetch(url);
     const data = await response.text();
 
     return {
