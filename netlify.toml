@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/vietnam/*"
-  to = "/.assets/js/proxy"
+  to = "/.netlify/functions/proxy"
   status = 200
