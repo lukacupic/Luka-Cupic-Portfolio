@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between items-center py-3 shadow-lg">
+        <h1 class="text-5xl font-futura font-bold tracking-tighter whitespace-nowrap p-3">LUKA ČUPIĆ</h1>
+        <div class="grow"></div>
+        <div
+          id="nav-links"
+          class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+        >
+          <ul class="flex md:flex-row flex-col font-futura text-gray-500">
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="#">PORTFOLIO</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="#">NEEDLESTACK</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="#">TRAVEL</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="#">ABOUT</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6">
+          <ion-icon onclick="toggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-gray-500 md:hidden px-3"></ion-icon>
+        </div>
+      </nav>
+    </header>
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

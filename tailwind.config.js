@@ -1,12 +1,10 @@
 module.exports = {
+  content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {
-      colors: {
-        clifford: "#da373d",
-      },
-      fontFamily: {
-        Futura: ['Futura, "sans-serif"'],
-      },
+    fontFamily: {
+      futura: ["Futura", "sans-serif"],
     },
+    extend: {},
   },
+  plugins: [],
 };
