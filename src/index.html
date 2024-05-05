@@ -6,14 +6,14 @@
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-gray-500">
     <header>
-      <nav class="flex justify-between items-center py-3 shadow-lg">
-        <h1 class="text-5xl font-futura font-bold tracking-tighter whitespace-nowrap p-3">LUKA ČUPIĆ</h1>
+      <nav class="flex justify-between items-center py-3">
+        <h1 id="logo" class="text-5xl font-futura font-bold tracking-tighter whitespace-nowrap p-3">LUKA ČUPIĆ</h1>
         <div class="grow"></div>
         <div
           id="nav-links"
-          class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+          class="nav-links bg-gray-300 duration-300 md:static absolute md:min-h-fit left-100 md:w-auto w-full flex items-center md:max-h-full max-h-0 overflow-hidden"
         >
           <ul class="flex md:flex-row flex-col font-futura text-gray-500">
             <li>
@@ -34,7 +34,7 @@
           </ul>
         </div>
         <div class="flex items-center gap-6">
-          <ion-icon onclick="toggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-gray-500 md:hidden px-3"></ion-icon>
+          <ion-icon onclick="toggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-black-500 md:hidden px-3"></ion-icon>
         </div>
       </nav>
     </header>
