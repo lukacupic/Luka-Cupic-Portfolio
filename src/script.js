@@ -1,16 +1,10 @@
 function toggleMenu(e) {
   const navLinks = document.getElementById("nav-links");
 
-  if (e.name === "menu") {
-    e.name = "close";
+  e.name = e.name === "menu" ? "close" : "menu";
 
-    navLinks.classList.remove("max-h-0");
-    navLinks.classList.add("max-h-10");
-  } else {
-    e.name = "menu";
-    navLinks.classList.remove("max-h-10");
-    navLinks.classList.add("max-h-0");
-  }
+  navLinks.classList.toggle("scale-y-0");
+  navLinks.classList.toggle("scale-y-100");
 }
 
 function fitMenuToNavBar() {
