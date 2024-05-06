@@ -1,5 +1,5 @@
 function toggleMenu(e) {
-  const navLinks = document.getElementById("nav-links");
+  const navLinks = document.querySelector(".nav-links");
 
   e.name = e.name === "menu" ? "close" : "menu";
 
@@ -9,7 +9,7 @@ function toggleMenu(e) {
 
 function fitMenuToNavBar() {
   let navElement = document.querySelector("nav");
-  let navLinks = document.getElementById("nav-links");
+  let navLinks = document.querySelector(".nav-links");
 
   let navElementHeight = navElement.offsetHeight;
   navLinks.style.top = navElementHeight + "px";
@@ -17,7 +17,7 @@ function fitMenuToNavBar() {
 
 function handleChangeToMobile(event) {
   if (event.matches) {
-    const navLinks = document.getElementById("nav-links");
+    const navLinks = document.querySelector(".nav-links");
     navLinks.classList.add("hidden");
 
     setTimeout(() => {
@@ -26,10 +26,22 @@ function handleChangeToMobile(event) {
   }
 }
 
-window.onload = function () {
-  fitMenuToNavBar();
-
+function initMobileBreakpoint() {
   const mdBreakpoint = window.matchMedia("(max-width: 768px)");
   handleChangeToMobile(mdBreakpoint);
   mdBreakpoint.addEventListener("change", handleChangeToMobile);
+}
+
+function initHamburgerMenu() {
+  const tham = document.querySelector(".tham");
+
+  tham.addEventListener("click", () => {
+    tham.classList.toggle("tham-active");
+  });
+}
+
+window.onload = function () {
+  fitMenuToNavBar();
+  initMobileBreakpoint();
+  initHamburgerMenu();
 };
