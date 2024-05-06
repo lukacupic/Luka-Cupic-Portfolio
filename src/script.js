@@ -15,6 +15,21 @@ function fitMenuToNavBar() {
   navLinks.style.top = navElementHeight + "px";
 }
 
+function handleChangeToMobile(event) {
+  if (event.matches) {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.add("hidden");
+
+    setTimeout(() => {
+      navLinks.classList.remove("hidden");
+    }, 500);
+  }
+}
+
 window.onload = function () {
   fitMenuToNavBar();
+
+  const mdBreakpoint = window.matchMedia("(max-width: 768px)");
+  handleChangeToMobile(mdBreakpoint);
+  mdBreakpoint.addEventListener("change", handleChangeToMobile);
 };
