@@ -1,10 +1,10 @@
 #logo {
   display: block;
   float: left;
-  height: 3.5em;
+  height: 4em;
   width: 100%;
   background: url("./assets/images/logo.svg") no-repeat;
-  background-size: 10em;
+  background-size: 15em;
   background-position: 0 center;
   cursor: pointer;
   opacity: 1;
