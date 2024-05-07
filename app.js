@@ -10,6 +10,16 @@ app.get("/", function (req, res) {
   res.sendFile("index.html");
 });
 
+app.post("/githubwebhook", (req, res) => {
+  exec("npm run update", (error, stdout, stderr) => {
+    if (error || stderr) {
+      // TODO
+    }
+  });
+
+  res.sendStatus(200);
+});
+
 app.listen(port, () => {
   console.log(`lukacupic server running at ${port}`);
 });

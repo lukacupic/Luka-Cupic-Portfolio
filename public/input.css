@@ -5,7 +5,7 @@
 @layer base {
   @font-face {
     font-family: "Futura";
-    src: url("../assets/fonts/futura-light.ttf") format("truetype");
+    src: url("assets/fonts/futura-light.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
     font-display: block;
@@ -13,7 +13,7 @@
 
   @font-face {
     font-family: "Futura";
-    src: url("../assets/fonts/futura-regular.ttf") format("truetype");
+    src: url("assets/fonts/futura-regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: block;
@@ -21,7 +21,7 @@
 
   @font-face {
     font-family: "Futura";
-    src: url("../assets/fonts/futura-medium.ttf") format("truetype");
+    src: url("assets/fonts/futura-medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
     font-display: block;
@@ -29,7 +29,7 @@
 
   @font-face {
     font-family: "Futura";
-    src: url("../assets/fonts/futura-semibold.ttf") format("truetype");
+    src: url("assets/fonts/futura-semibold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
     font-display: block;
@@ -37,7 +37,7 @@
 
   @font-face {
     font-family: "Futura";
-    src: url("../assets/fonts/futura-bold.ttf") format("truetype");
+    src: url("assets/fonts/futura-bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: block;

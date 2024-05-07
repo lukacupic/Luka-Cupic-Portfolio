@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "node app.js",
+    "update": "sh ./scripts/update.sh"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.3"
   },
