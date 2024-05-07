@@ -23,3 +23,8 @@ header nav {
     transition: none;
   }
 }
+
+@font-face {
+  font-family: karate;
+  src: url("./assets/vendor/icomoon/karate.ttf") format("truetype");
+}
