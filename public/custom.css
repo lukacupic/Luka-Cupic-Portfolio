@@ -2,16 +2,18 @@
   display: block;
   float: left;
   height: 4em;
-  width: 100%;
+  width: 15em;
   background: url("./assets/images/logo.svg") no-repeat;
   background-size: 15em;
   background-position: 0 center;
   cursor: pointer;
   opacity: 1;
+  transition: all 0.3s ease-out;
 }
 
 header nav {
   padding-top: 0.5em;
+  padding-bottom: 0.5em;
   padding-left: 1.5em;
   padding-right: 1em;
 }
