@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/portfolio/*"
+  to = "/src/pages/portfolio.html"
+  status = 200

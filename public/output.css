@@ -1921,6 +1921,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pr-10 {
   padding-right: 2.5rem;
 }
