@@ -5,10 +5,17 @@ const { exec } = require("child_process");
 const app = express();
 const port = 8092;
 
-app.use(express.static(__dirname + "/public"));
+const publicDir = path.join(__dirname, "public");
+const pagesDir = path.join(publicDir, "pages");
+
+app.use(express.static(publicDir));
 
 app.get("/", function (req, res) {
-  res.sendFile("index.html");
+  res.sendFile(path.join(pagesDir, "index.html"));
+});
+
+app.get("/portfolio", function (req, res) {
+  res.sendFile(path.join(pagesDir, "portfolio.html"));
 });
 
 app.post("/githubwebhook", (req, res) => {
