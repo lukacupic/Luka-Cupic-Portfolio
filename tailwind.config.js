@@ -4,7 +4,12 @@ module.exports = {
     fontFamily: {
       futura: ["Futura", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        blue: "#0078ff",
+        gray: "#5c5c5c",
+      },
+    },
   },
   plugins: [require("tailwind-hamburgers")],
 };
