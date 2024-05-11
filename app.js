@@ -19,7 +19,7 @@ app.get("/portfolio", function (req, res) {
 });
 
 app.post("/githubwebhook", (req, res) => {
-  exec("npm run update", (error, stdout, stderr) => {
+  exec("npm run deploy", (error, stdout, stderr) => {
     if (error || stderr) {
       // TODO
     }

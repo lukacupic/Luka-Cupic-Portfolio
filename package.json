@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "node app.js",
-    "update": "sh ./scripts/update.sh"
+    "deploy": "sh ./scripts/deploy.sh"
   },
   "devDependencies": {
     "nodemon": "^3.1.0",
