@@ -15,6 +15,15 @@ else
   exit 1
 fi
 
+printf "${TEXT_COLOR}Installing packages: ${NO_COLOR}"
+npm install > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+  printf "${TEXT_COLOR}done.${NO_COLOR}\n"
+else
+  printf "${TEXT_COLOR}failed, exiting.${NO_COLOR}\n"
+  exit 1
+fi
+
 printf "${TEXT_COLOR}Restarting the app: ${NO_COLOR}"
 pm2 restart lukacupic > /dev/null 2>&1
 if [ $? -eq 0 ]; then
