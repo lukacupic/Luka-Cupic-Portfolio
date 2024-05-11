@@ -18,6 +18,13 @@ header nav {
   padding-right: 1em;
 }
 
+.interests-table td span:first-child {
+  color: #0078ff;
+}
+.interests-table td span:nth-child(2) {
+  color: #5c5c5c;
+}
+
 @media (min-width: 767px) and (max-width: 1023px) {
   .custom-transition {
     transition: none;
