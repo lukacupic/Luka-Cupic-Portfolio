@@ -1,4 +1,4 @@
 {
   "ext": "js,json,html, css",
-  "exec": "npx tailwindcss -i ./public/input.css -o ./public/output.css && node app.js"
+  "exec": "node app.js"
 }

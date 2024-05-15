@@ -45,14 +45,32 @@
 }
 
 @layer components {
+  /* Interests */
   .interests-table td span:first-child {
-    @apply text-blue;
+    @apply text-black;
   }
 
   .interests-table td span:nth-child(2) {
     @apply text-custom_gray;
   }
 
+  /* Hero section */
+  .hero-section-div {
+    @apply flex flex-col justify-center items-center mt-[3rem] md:mt-[4rem] mb-[5rem] md:mb-[6rem];
+  }
+
+  .hero-section-title {
+    @apply text-2xl md:text-4xl text-left font-bold;
+  }
+
+  .hero-section-subtitle {
+    @apply py-2 text-left text-custom_gray;
+  }
+
+  .hero-section-content {
+  }
+
+  /* Sections */
   .section-div {
     @apply flex flex-col justify-center items-center mt-[3rem] md:mt-[4rem] mb-[5rem] md:mb-[6rem];
   }
@@ -70,7 +88,7 @@
   }
 
   .section-separator {
-    @apply w-10 h-1 mx-auto my-1 bg-blue border-0 rounded mb-10;
+    @apply w-10 h-1 mx-auto my-1 bg-black border-0 rounded mb-10;
   }
 }
 
