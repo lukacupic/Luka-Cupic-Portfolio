@@ -14,7 +14,7 @@
     <!-- Icons -->
     <link href="assets/vendor/font-awesome/css/all.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="flex flex-col min-h-screen">
     <header>
       <nav class="flex justify-between items-center">
         <a href="/" id="logo"></a>
@@ -50,14 +50,14 @@
       </nav>
     </header>
 
-    <main>
-      <div
+    <main class="flex-grow">
+      <!-- <div
         id="full-screen-photo"
         class="bg-cover bg-no-repeat bg-center"
         style="background-image: url('./assets/images/hero-bg.jpg'); height: 100vh; background-size: cover; background-position: center"
-      ></div>
+      ></div> -->
 
-      <div class="bg-gray-950 text-white p-1">
+      <div>
         <div class="section-div">
           <p class="section-subtitle">
             <span class="italic text-lg">A jack of all trades is a master of none, but oftentimes better than a master of one.</span>
@@ -66,11 +66,104 @@
           </p>
         </div>
       </div>
+
+      <div>
+        <div class="section-div">
+          <h3 class="section-title">INTERESTS</h3>
+          <p class="section-subtitle">Some of the things I like:</p>
+          <hr class="section-separator" />
+
+          <div class="mx-auto">
+            <table class="text-md md:text-lg interests-tabletable-auto">
+              <tr class="grid md:grid-cols-2">
+                <td class="py-4">
+                  <span class="fas fa-brain"></span>
+                  <span class="ml-2">Psychology</span>
+                </td>
+                <td class="py-4">
+                  <span class="fas fa-gamepad"></span>
+                  <span class="ml-2">Game Development</span>
+                </td>
+              </tr>
+              <tr class="grid md:grid-cols-2">
+                <td class="py-4">
+                  <span class="fas fa-landmark"></span>
+                  <span class="ml-2">History</span>
+                </td>
+                <td class="py-4">
+                  <span class="fas fa-rocket"></span>
+                  <span class="ml-2">Astronomy</span>
+                </td>
+              </tr>
+              <tr class="grid md:grid-cols-2">
+                <td class="py-4">
+                  <span class="fas fa-stethoscope"></span>
+                  <span class="ml-2">Medicine</span>
+                </td>
+                <td class="py-4">
+                  <span class="fas fa-user-secret"></span>
+                  <span class="ml-2">Cyber Security</span>
+                </td>
+              </tr>
+              <tr class="grid md:grid-cols-2">
+                <td class="py-4">
+                  <span class="fas fa-video"></span>
+                  <span class="ml-2">Filmmaking</span>
+                </td>
+                <td class="py-4">
+                  <span class="fas fa-guitar"></span>
+                  <span class="ml-2">Guitar</span>
+                </td>
+              </tr>
+              <tr class="grid md:grid-cols-2">
+                <td class="py-4">
+                  <span class="fas fa-water"></span>
+                  <span class="ml-2">Scuba diving</span>
+                </td>
+                <td class="py-4">
+                  <span class="fas fa-globe-africa"></span>
+                  <span class="ml-2">Geoinformatics</span>
+                </td>
+              </tr>
+              <tr class="grid md:grid-cols-2">
+                <td class="py-4">
+                  <span class="fas fa-lightbulb"></span>
+                  <span class="ml-2">Philosophy</span>
+                </td>
+                <td class="py-4">
+                  <span class="fas fa-gem"></span>
+                  <span class="ml-2">Mindfulness</span>
+                </td>
+              </tr>
+              <tr class="grid md:grid-cols-2">
+                <td class="py-4">
+                  <span class="fas fa-utensils"></span>
+                  <span class="ml-2">Cooking</span>
+                </td>
+                <td class="py-4">
+                  <span class="fas fa-shoe-prints"></span>
+                  <span class="ml-2">Backpacking</span>
+                </td>
+              </tr>
+              <tr class="grid md:grid-cols-2">
+                <td class="py-4">
+                  <span class="fa-icon" style="font-family: 'karate'">&#xE900;</span>
+                  <span class="ml-2">Karate</span>
+                </td>
+                <td class="py-4">
+                  <span class="fas fa-motorcycle"></span>
+                  <span class="ml-2">Motorbike</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer class="rounded-lg">
-      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-10">
-        <span class="block text-lg text-black text-center">© Luka Čupić 2024</span>
+    <footer class="rounded-lg h-10 my-5">
+      <div class="w-full max-w-screen-xl mx-auto">
+        <span class="block text-lg text-gray-950 text-center">© Luka Čupić 2024</span>
       </div>
     </footer>
 
