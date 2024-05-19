@@ -95,7 +95,7 @@
 
   /* Sections */
   .section-div {
-    @apply flex flex-col justify-center items-center mt-[3rem] md:mt-[4rem] mb-[5rem] md:mb-[6rem];
+    @apply flex flex-col justify-center items-center mt-[3rem] md:mt-[4rem] mb-[5rem] md:mb-[6rem] px-5;
   }
 
   .section-div p:nth-of-type(2) {
