@@ -42,9 +42,35 @@
     font-style: normal;
     font-display: block;
   }
+
+  @font-face {
+    font-family: karate;
+    src: url("assets/vendor/icomoon/karate.ttf") format("truetype");
+  }
 }
 
 @layer components {
+  /* Logo */
+  #logo {
+    display: block;
+    float: left;
+    height: 4em;
+    width: 15em;
+    background: url("./assets/images/logo.svg") no-repeat;
+    background-size: 15em;
+    background-position: 0 center;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+  }
+
+  header nav {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1em;
+  }
+
   /* Interests */
   .interests-table td span:first-child {
     @apply text-black;
@@ -65,9 +91,6 @@
 
   .hero-section-subtitle {
     @apply text-center text-[1rem] md:text-xl text-custom_gray py-7 px-10;
-  }
-
-  .hero-section-content {
   }
 
   /* Sections */
@@ -93,6 +116,14 @@
 
   .quote-separator {
     @apply w-10 h-1 mx-auto  bg-black border-0 rounded;
+  }
+}
+
+@layer utilities {
+  @media (min-width: 767px) and (max-width: 1023px) {
+    .custom-transition {
+      transition: none;
+    }
   }
 }
 
