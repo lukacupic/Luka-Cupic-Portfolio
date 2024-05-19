@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons -->
+    <link href="assets/favicon.png" rel="icon" />
+
+    <!-- CSS -->
+    <link href="./output.css" rel="stylesheet" />
+    <link href="./custom.css" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link href="assets/vendor/font-awesome/css/all.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between items-center">
+        <a href="/" id="logo"></a>
+
+        <div class="grow"></div>
+        <div
+          class="nav-links md:static absolute md:min-h-fit md:w-auto w-full flex items-center md:transform-none transform origin-top scale-y-0 md:scale-y-100 md:px-0 px-6 transition-transform duration-300 ease-in-out custom-transition"
+        >
+          <ul class="flex md:flex-row flex-col text-custom_gray font-futura">
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="/portfolio">PORTFOLIO</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="/needlestack">NEEDLESTACK</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="/blog">BLOG</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="/about">ABOUT</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="/contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+
+        <div onclick="toggleMenu(this)" class="tham tham-e-slider tham-w-7 hover:opacity-100 md:hidden pr-10">
+          <div class="tham-box">
+            <div class="tham-inner bg-black"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div
+        id="full-screen-photo"
+        class="bg-cover bg-no-repeat bg-center"
+        style="background-image: url('./assets/images/hero-bg.jpg'); height: 100vh; background-size: cover; background-position: center"
+      ></div>
+
+      <div class="bg-gray-950 text-white p-1">
+        <div class="section-div">
+          <p class="section-subtitle">
+            <span class="italic text-lg">A jack of all trades is a master of none, but oftentimes better than a master of one.</span>
+            <br />
+            <span>— Proverb</span>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="rounded-lg">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-10">
+        <span class="block text-lg text-black text-center">© Luka Čupić 2024</span>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
