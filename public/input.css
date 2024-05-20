@@ -80,17 +80,21 @@
     @apply text-custom_gray;
   }
 
+  .interests-table tr td span:first-child {
+    @apply transform transition-transform duration-300 ease-in-out hover:scale-130;
+  }
+
   /* Hero section */
   .hero-section-div {
     @apply flex flex-col justify-center items-center mt-[8rem] mb-[8rem];
   }
 
   .hero-section-title {
-    @apply text-4xl md:text-7xl text-center font-bold px-5;
+    @apply text-5xl md:text-7xl text-center font-bold;
   }
 
   .hero-section-subtitle {
-    @apply text-center text-[1rem] md:text-xl text-custom_gray py-7 px-10;
+    @apply text-center text-base md:text-lg text-custom_gray;
   }
 
   /* Sections */
