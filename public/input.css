@@ -106,8 +106,12 @@
     @apply text-3xl md:text-5xl text-center font-bold;
   }
 
+  .section-title-small {
+    @apply text-xl md:text-3xl text-center font-bold;
+  }
+
   .section-subtitle {
-    @apply py-2 text-center;
+    @apply py-4 text-center;
   }
 
   .section-separator {
@@ -116,6 +120,23 @@
 
   .quote-separator {
     @apply w-10 h-1 mx-auto  bg-black border-0 rounded;
+  }
+
+  /* Needlestack */
+  .needlestack-div > div {
+    @apply my-10;
+  }
+
+  .needlestack-div > div > div {
+    @apply text-left section-title-small pb-3;
+  }
+
+  .needlestack-div > div > ul {
+    @apply list-disc list-inside space-y-3;
+  }
+
+  .needlestack-div > div > ul > li > a {
+    @apply underline;
   }
 }
 

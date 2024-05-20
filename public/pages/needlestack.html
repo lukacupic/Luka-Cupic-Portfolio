@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Needlestack | Luka Čupić</title>
+
+    <!-- Favicons -->
+    <link href="assets/favicon.png" rel="icon" />
+
+    <!-- CSS -->
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link href="assets/vendor/font-awesome/css/all.css" rel="stylesheet" />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header>
+      <nav class="flex justify-between items-center">
+        <a href="/" id="logo"></a>
+
+        <div class="grow"></div>
+        <div
+          class="nav-links md:static absolute md:min-h-fit md:w-auto w-full flex items-center md:transform-none transform origin-top scale-y-0 md:scale-y-100 transition-transform duration-300 ease-in-out custom-transition bg-white"
+        >
+          <ul class="flex md:flex-row flex-col text-custom_gray font-futura">
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="/portfolio">PORTFOLIO</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="/needlestack">NEEDLESTACK</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="/blog">BLOG</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="/about">ABOUT</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-black" href="/contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+
+        <div onclick="toggleMenu(this)" class="tham tham-e-slider tham-w-7 hover:opacity-100 md:hidden pr-10">
+          <div class="tham-box">
+            <div class="tham-inner bg-black"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="flex-grow">
+      <main>
+        <div class="pt-5">
+          <div class="section-div">
+            <h3 class="section-title">NEEDLESTACK</h3>
+            <p class="section-subtitle">a collection of things that I love or consider to be the best ones on the entire internet.</p>
+            <hr class="section-separator" />
+
+            <div class="needlestack-div">
+              <div>
+                <div>BLOGS</div>
+                <ul>
+                  <li>
+                    <a href="https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html" target="_blank" rel="noopener noreferrer"
+                      >The Day You Became A Better Writer</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="https://ethanmaurice.com/more-favorites" target="_blank" rel="noopener noreferrer">Ethan Maurice</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div>MUSIC</div>
+                <ul>
+                  <li><a href="https://open.spotify.com/track/0WoZrCjeAfrJi3SyZgQnG6" target="_blank" rel="noopener noreferrer">Johnny's Story</a></li>
+                  <li><a href="https://open.spotify.com/track/5xdySZ8v0lEOKblcwXWT3M" target="_blank" rel="noopener noreferrer">Mother</a></li>
+                  <li><a href="https://open.spotify.com/track/7s1XQCJs44l54ARW4OCm42" target="_blank" rel="noopener noreferrer">Malena</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=bRo5pbgO1jg" target="_blank" rel="noopener noreferrer">Endless Road</a></li>
+                  <li><a href="https://open.spotify.com/track/5WaSBTP8rqk6YckGobgnkz" target="_blank" rel="noopener noreferrer">Спокойная ночь</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=i6RZY4Ar3fw" target="_blank" rel="noopener noreferrer">My My, Hey Hey</a></li>
+                  <li><a href="https://open.spotify.com/track/79r2zIO9T33fQmSWIz4J8o" target="_blank" rel="noopener noreferrer">Desperation</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=8Pa9x9fZBtY" target="_blank" rel="noopener noreferrer">Sultants of Swing (Alchemy Live)</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=MV_3Dpw-BRY" target="_blank" rel="noopener noreferrer">Nightcall</a></li>
+                  <li><a href="https://open.spotify.com/track/3DT90EuqEuIOGlb6bVKHMN" target="_blank" rel="noopener noreferrer">Riders on the Storm</a></li>
+                  <li><a href="https://open.spotify.com/track/5ACHmjBJdpDmmaZfWV7J07" target="_blank" rel="noopener noreferrer">Mystic</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=fuYL-keoGvU" target="_blank" rel="noopener noreferrer">Pseudohendrix</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=NfreemrK_c0" target="_blank" rel="noopener noreferrer">Vietcong 2 OST</a></li>
+                  <li><a href="https://crystalcastles.bandcamp.com/track/kept" target="_blank" rel="noopener noreferrer">Kept</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <div>TV & MOVIES</div>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Star_Wars" target="_blank" rel="noopener noreferrer">Star Wars</a></li>
+                  <li><a href="https://www.imdb.com/title/tt0934814/" target="_blank" rel="noopener noreferrer">Chuck</a></li>
+                  <li><a href="https://www.imdb.com/title/tt0117571/" target="_blank" rel="noopener noreferrer">Scream</a></li>
+                  <li><a href="https://www.imdb.com/title/tt0411008/" target="_blank" rel="noopener noreferrer">Lost</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <div>PODCASTS</div>
+                <ul>
+                  <li><a href="https://www.youtube.com/watch?v=3qHkcs3kG44" target="_blank" rel="noopener noreferrer">JRE: Naval Ravikant</a></li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=LPo36EGuOI4" target="_blank" rel="noopener noreferrer"
+                      >Know Their Story Podcast: Sergeant Kregg Jorgenson</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div>HUMOR</div>
+                <ul>
+                  <li><a href="https://www.youtube.com/watch?v=A7QT7_aQrG0" target="_blank" rel="noopener noreferrer">How the Pandemic Started</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="rounded-lg h-10 my-5">
+      <div class="w-full max-w-screen-xl mx-auto">
+        <span class="block text-lg text-gray-950 text-center">© Luka Čupić 2024</span>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

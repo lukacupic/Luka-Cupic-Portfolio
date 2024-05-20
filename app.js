@@ -22,6 +22,10 @@ app.get("/about", function (req, res) {
   res.sendFile(path.join(pagesDir, "about.html"));
 });
 
+app.get("/needlestack", function (req, res) {
+  res.sendFile(path.join(pagesDir, "needlestack.html"));
+});
+
 app.post("/githubwebhook", (req, res) => {
   exec("npm run deploy", (error, stdout, stderr) => {
     if (error || stderr) {
