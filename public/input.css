@@ -72,12 +72,16 @@
   }
 
   /* Interests */
+  .interests-table td {
+    @apply py-5;
+  }
+
   .interests-table td span:first-child {
-    @apply text-black;
+    @apply text-black text-[2rem] mr-2 w-6;
   }
 
   .interests-table td span:nth-child(2) {
-    @apply text-custom_gray;
+    @apply font-medium ml-10;
   }
 
   .interests-table tr td span:first-child {
