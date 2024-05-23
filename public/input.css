@@ -99,7 +99,7 @@
   }
 
   .hero-section-title {
-    @apply text-5xl md:text-7xl text-center font-bold;
+    @apply text-5xl md:text-[3.85rem] text-center font-bold;
   }
 
   .hero-section-subtitle {
