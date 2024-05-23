@@ -72,20 +72,25 @@
   }
 
   /* Interests */
+
   .interests-table td {
-    @apply py-5;
+    @apply flex justify-start py-[2rem];
   }
 
-  .interests-table td span:first-child {
+  .interests-table td > div > span:first-child {
     @apply text-black text-[2rem] mr-2 w-6;
   }
 
-  .interests-table td span:nth-child(2) {
-    @apply font-medium ml-10;
+  .interests-table td > div:nth-child(2) {
+    @apply text-[1.25rem] align-top ml-10;
   }
 
-  .interests-table tr td span:first-child {
-    @apply transform transition-transform duration-300 ease-in-out hover:scale-130;
+  .interests-table td > div:nth-child(2) > div:first-child {
+    @apply flex flex-col justify-start leading-none;
+  }
+
+  .interests-table td > div:nth-child(2) > div:nth-child(2) {
+    @apply text-[1rem] text-custom_gray bg-red-50 mt-4 max-w-[30rem] leading-8;
   }
 
   /* Hero section */
