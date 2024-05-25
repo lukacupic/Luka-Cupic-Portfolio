@@ -11,8 +11,31 @@ const pagesDir = path.join(publicDir, "pages");
 app.use(express.static(publicDir));
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(pagesDir, "wip.html"));
+  res.sendFile(path.join(pagesDir, "index.html"));
 });
+
+app.get("/portfolio", function (req, res) {
+  res.sendFile(path.join(pagesDir, "portfolio.html"));
+});
+
+app.get("/about", function (req, res) {
+  res.sendFile(path.join(pagesDir, "about.html"));
+});
+
+app.get("/needlestack", function (req, res) {
+  res.sendFile(path.join(pagesDir, "needlestack.html"));
+});
+
+// Disable the GH Hook temporarily, while work-in-progress is active
+// app.post("/githubwebhook", (req, res) => {
+//   exec("npm run deploy", (error, stdout, stderr) => {
+//     if (error || stderr) {
+//       // TODO
+//     }
+//   });
+
+//   res.sendStatus(200);
+// });
 
 app.listen(port, () => {
   console.log(`lukacupic server running at ${port}`);
