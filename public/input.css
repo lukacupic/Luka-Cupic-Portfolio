@@ -93,6 +93,10 @@
     @apply text-[1rem] text-custom_gray mt-4 max-w-[30rem] leading-8;
   }
 
+  .index-table td > div:nth-child(2) > div:nth-child(3) {
+    @apply text-[.8rem] uppercase hover:underline font-bold text-custom_gray mt-1 max-w-[30rem] leading-8;
+  }
+
   /* Interests table */
   .interests-table tr {
     @apply grid md:grid-cols-2;
